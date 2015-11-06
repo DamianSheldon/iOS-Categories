@@ -1,7 +1,7 @@
 iOS-Categories
 ================
 
-iOS中的各种Objective-C Category, a collection of useful Objective-C Categories extending iOS Frameworks such as Foundation,UIKit,CoreData,QuartzCore,CoreLocation,MapKit Etc.
+A collection of useful Objective-C Categories extending iOS Frameworks such as Foundation,UIKit,CoreData,QuartzCore,CoreLocation,MapKit Etc.
 
 ## Foundation
 * NSArray
