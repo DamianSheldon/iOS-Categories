@@ -1,5 +1,7 @@
 PODS:
-  - iOS-Categories/Foundation/NSString (0.0.1)
+  - iOS-Categories/Foundation/NSData (0.0.1)
+  - iOS-Categories/Foundation/NSString (0.0.1):
+    - iOS-Categories/Foundation/NSData
 
 DEPENDENCIES:
   - iOS-Categories/Foundation/NSString (from `../`)
@@ -9,6 +11,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  iOS-Categories: bede5738d2622ef307adae8b6ba4c2f28a02c870
+  iOS-Categories: db8f41ed526798560f619b976edf0464e24154da
 
 COCOAPODS: 0.39.0

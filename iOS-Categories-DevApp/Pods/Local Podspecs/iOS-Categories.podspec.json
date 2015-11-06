@@ -21,10 +21,16 @@
       "subspecs": [
         {
           "name": "NSString",
-          "source_files": [
-            "iOS-Categories/Categories/Foundation/NSString/**/*.{h,m}",
-            "iOS-Categories/Categories/Foundation/NSData/**/*.{h,m}"
-          ],
+          "source_files": "iOS-Categories/Categories/Foundation/NSString/**/*.{h,m}",
+          "dependencies": {
+            "iOS-Categories/Foundation/NSData": [
+
+            ]
+          }
+        },
+        {
+          "name": "NSData",
+          "source_files": "iOS-Categories/Categories/Foundation/NSData/**/*.{h,m}",
           "libraries": "z"
         }
       ]

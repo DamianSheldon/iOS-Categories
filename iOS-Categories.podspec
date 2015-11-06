@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "iOS-Categories"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "A collection of useful Objective-C Categories."
 
   # This description is used to generate tags and improve search results.
@@ -137,9 +137,16 @@ A collection of useful Objective-C Categories extending iOS Frameworks such as F
 
   s.subspec 'Foundation' do |foundation|
    foundation.subspec 'NSString' do |string|
-    string.source_files = 'iOS-Categories/Categories/Foundation/NSString/**/*.{h,m}', 'iOS-Categories/Categories/Foundation/NSData/**/*.{h,m}'
-    string.libraries = 'z'
+    string.source_files = 'iOS-Categories/Categories/Foundation/NSString/**/*.{h,m}'
+    # string.source_files = 'iOS-Categories/Categories/Foundation/NSString/**/*.{h,m}', 'iOS-Categories/Categories/Foundation/NSData/**/*.{h,m}'
+    # string.libraries = 'z'
+    string.dependency 'iOS-Categories/Foundation/NSData'
    end 
+   
+   foundation.subspec 'NSData' do |data|
+     data.source_files = 'iOS-Categories/Categories/Foundation/NSData/**/*.{h,m}' 
+     data.libraries = 'z'
+   end
   end
 
 end
