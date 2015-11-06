@@ -1,0 +1,33 @@
+{
+  "name": "iOS-Categories",
+  "version": "0.0.1",
+  "summary": "A collection of useful Objective-C Categories.",
+  "description": "A collection of useful Objective-C Categories extending iOS Frameworks such as Foundation,UIKit,CoreData,QuartzCore,CoreLocation,MapKit Etc.",
+  "homepage": "https://github.com/DamianSheldon/iOS-Categories",
+  "license": "MIT",
+  "authors": {
+    "Meiliang Dong": "dongmeilianghy@sina.com"
+  },
+  "platforms": {
+    "ios": "6.0"
+  },
+  "source": {
+    "git": "https://github.com/DamianSheldon/iOS-Categories.git",
+    "tag": "0.0.1"
+  },
+  "subspecs": [
+    {
+      "name": "Foundation",
+      "subspecs": [
+        {
+          "name": "NSString",
+          "source_files": [
+            "iOS-Categories/Categories/Foundation/NSString/**/*.{h,m}",
+            "iOS-Categories/Categories/Foundation/NSData/**/*.{h,m}"
+          ],
+          "libraries": "z"
+        }
+      ]
+    }
+  ]
+}

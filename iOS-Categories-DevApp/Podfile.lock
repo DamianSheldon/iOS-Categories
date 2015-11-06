@@ -1,0 +1,14 @@
+PODS:
+  - iOS-Categories/Foundation/NSString (0.0.1)
+
+DEPENDENCIES:
+  - iOS-Categories/Foundation/NSString (from `../`)
+
+EXTERNAL SOURCES:
+  iOS-Categories:
+    :path: ../
+
+SPEC CHECKSUMS:
+  iOS-Categories: bede5738d2622ef307adae8b6ba4c2f28a02c870
+
+COCOAPODS: 0.39.0
