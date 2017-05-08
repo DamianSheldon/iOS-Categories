@@ -1,4 +1,4 @@
-version = "1.5.7P";
+version = "1.5.8P";
 
 Pod::Spec.new do |s|
   s.name         = "JKCategories"
@@ -36,9 +36,9 @@ Pod::Spec.new do |s|
 
   s.subspec 'UIKit' do |uikit|
     
-    uikit.subspec 'Header' do |header|
-        header.source_files = 'JKCategories/JKUIKit.h'
-    end
+    #uikit.subspec 'Header' do |header|
+    #    header.source_files = 'JKCategories/JKUIKit.h'
+    #end
     
     uikit.subspec 'UIView' do |uiview|
 
