@@ -1,4 +1,4 @@
-version = "1.5";
+version = "1.5.1P";
 
 Pod::Spec.new do |s|
   s.name         = "JKCategories"
@@ -15,7 +15,21 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.frameworks = 'Foundation', 'UIKit', 'CoreData', 'QuartzCore', 'CoreLocation', 'MapKit'
   s.libraries    = "z"
-  s.source       = { :git => "https://github.com/shaojiankui/JKCategories.git", :tag => "#{version}" }
-  s.source_files = "JKCategories", "JKCategories/*.{h}","JKCategories/**/*.{h,m}"
+  s.source       = { :git => "https://github.com/DamianSheldon/iOS-Categories.git", :tag => "#{version}" }
+  s.source_files = "JKCategories", "JKCategories/*.h","JKCategories/**/*.{h,m}"
   #s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+
+  s.subspec 'Foundation' do |foundation|
+
+    foundation.subspec 'NSString' do |string|
+        string.source_files = 'JKCategories/Foundation/NSString/**/*.{h,m}'
+        string.dependency 'iOS-Categories/Foundation/NSData'
+    end 
+
+    foundation.subspec 'NSData' do |data|
+        data.source_files = 'JKCategories/Foundation/NSData/**/*.{h,m}'
+        data.libraries = 'z'
+    end
+end
+
 end
