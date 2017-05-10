@@ -10,7 +10,7 @@
 
 @implementation UIButton (JKCountDown)
 
-- (void)jk_startCountDownFromCount:(NSInteger )count waitTitle:(NSString *)waitTitle
+- (void)jk_startCountDownFromCount:(NSInteger)count waitTitle:(NSString *)waitTitle
 {
     if (count <= 0) {
         return;
@@ -35,6 +35,7 @@
             dispatch_async(dispatch_get_main_queue(), ^{
                 //设置界面的按钮显示 根据自己需求设置
                 strongSelf.enabled = YES;
+                [strongSelf sizeToFit];
             });
         }
         else {

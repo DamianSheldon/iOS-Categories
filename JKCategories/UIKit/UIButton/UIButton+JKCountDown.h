@@ -10,6 +10,6 @@
 
 @interface UIButton (JKCountDown)
 
-- (void)jk_startCountDownFromCount:(NSInteger )count waitTitle:(NSString *)waitTitle;
+- (void)jk_startCountDownFromCount:(NSInteger)count waitTitle:(NSString *)waitTitle;
 
 @end
