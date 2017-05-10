@@ -1,4 +1,4 @@
-version = "1.6.0P";
+version = "1.6.1P";
 
 Pod::Spec.new do |s|
   s.name         = "JKCategories"
@@ -48,6 +48,14 @@ Pod::Spec.new do |s|
 
         uiview.subspec 'Visuals' do |visuals|
             visuals.source_files = 'JKCategories/UIKit/UIView/UIView+JKVisuals.{h,m}'
+        end
+
+    end
+
+    uikit.subspec 'UIButton' do |uibutton|
+        
+        uibutton.subspec 'CountDown' do |countdown|
+            countdown.source_files = 'JKCategories/UIKit/UIButton/UIButton+JKCountDown.{h,m}'
         end
 
     end

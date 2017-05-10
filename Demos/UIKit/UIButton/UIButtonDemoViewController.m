@@ -54,9 +54,9 @@
 }
 */
 
-- (IBAction)countButtonTouchd:(id)sender {
+- (IBAction)countButtonTouchd:(UIButton *)sender {
+    [sender setTitleColor:[UIColor grayColor] forState:UIControlStateDisabled];
     
-    [sender jk_startTime:6 title:@"倒计时" waitTittle:@"秒"];
-
+    [sender jk_startCountDownFromCount:60 waitTitle:@"#秒后重新获取"];
 }
 @end

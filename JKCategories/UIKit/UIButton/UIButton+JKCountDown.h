@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UIButton (JKCountDown)
--(void)jk_startTime:(NSInteger )timeout title:(NSString *)tittle waitTittle:(NSString *)waitTittle;
+
+- (void)jk_startCountDownFromCount:(NSInteger )count waitTitle:(NSString *)waitTitle;
+
 @end
