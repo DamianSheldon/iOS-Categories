@@ -1,4 +1,4 @@
-version = "1.6.2P";
+version = "1.6.4P";
 
 Pod::Spec.new do |s|
   s.name         = "JKCategories"
@@ -48,6 +48,10 @@ Pod::Spec.new do |s|
 
         uiview.subspec 'Visuals' do |visuals|
             visuals.source_files = 'JKCategories/UIKit/UIView/UIView+JKVisuals.{h,m}'
+        end
+
+        uiview.subspec 'CustomBorder' do |customborder|
+            customborder.source_files = 'JKCategories/UIKit/UIView/UIView+JKCustomBorder.{h,m}'
         end
 
     end
