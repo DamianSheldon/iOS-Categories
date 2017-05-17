@@ -10,7 +10,7 @@
 
 @implementation UIImage (JKSampleBuffer)
 
-- (UIImage *)jk_imageFromSampleBuffer:(CMSampleBufferRef)sampleBuffer
++ (UIImage *)jk_imageFromSampleBuffer:(CMSampleBufferRef)sampleBuffer
 {
     // Get a CMSampleBuffer's Core Video image buffer for the media data
     CVImageBufferRef imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);

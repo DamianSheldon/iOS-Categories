@@ -11,6 +11,6 @@
 
 @interface UIImage (JKSampleBuffer)
 
-- (UIImage *)jk_imageFromSampleBuffer:(CMSampleBufferRef)sampleBuffer;
++ (UIImage *)jk_imageFromSampleBuffer:(CMSampleBufferRef)sampleBuffer;
 
 @end
