@@ -1,4 +1,4 @@
-version = "1.6.5P";
+version = "1.6.6P";
 
 Pod::Spec.new do |s|
   s.name         = "JKCategories"
@@ -68,6 +68,11 @@ Pod::Spec.new do |s|
         
         uiimage.subspec 'FXImage' do |fximage|
             fximage.source_files = 'JKCategories/UIKit/UIImage/UIImage+JKFXImage.{h,m}'
+        end
+
+        uiimage.subspec 'SampleBuffer' do |samplebuffer|
+            samplebuffer.source_files = 'JKCategories/UIKit/UIImage/UIImage+JKSampleBuffer.{h,m}'
+            samplebuffer.frameworks = 'CoreMedia'
         end
     end
 

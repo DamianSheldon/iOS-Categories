@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		581B55D41ECBEE8800FABFF9 /* UIImage+JKSampleBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 581B55D31ECBEE8800FABFF9 /* UIImage+JKSampleBuffer.m */; };
 		588F0B1C1EC05F050067BEA5 /* UIView+JKBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 588F0B1B1EC05F050067BEA5 /* UIView+JKBorder.m */; };
 		7926E6931B736E8200888EB9 /* UIViewController+JKBackButtonItemTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7926E6921B736E8200888EB9 /* UIViewController+JKBackButtonItemTitle.m */; };
 		7982561A1B3A59060033A0C1 /* NSString+JKNormalRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 798256191B3A59060033A0C1 /* NSString+JKNormalRegex.m */; };
@@ -368,6 +369,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		581B55D21ECBEE8800FABFF9 /* UIImage+JKSampleBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKSampleBuffer.h"; sourceTree = "<group>"; };
+		581B55D31ECBEE8800FABFF9 /* UIImage+JKSampleBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKSampleBuffer.m"; sourceTree = "<group>"; };
 		588F0B1A1EC05F050067BEA5 /* UIView+JKBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JKBorder.h"; sourceTree = "<group>"; };
 		588F0B1B1EC05F050067BEA5 /* UIView+JKBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JKBorder.m"; sourceTree = "<group>"; };
 		7926E6911B736E8200888EB9 /* UIViewController+JKBackButtonItemTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JKBackButtonItemTitle.h"; sourceTree = "<group>"; };
@@ -2319,6 +2322,8 @@
 				A2EF56E01B21C59C0005F730 /* UIImage+JKBlur.m */,
 				A248782B1C55CC5C00AFF958 /* UIImage+JKSuperCompress.h */,
 				A248782C1C55CC5C00AFF958 /* UIImage+JKSuperCompress.m */,
+				581B55D21ECBEE8800FABFF9 /* UIImage+JKSampleBuffer.h */,
+				581B55D31ECBEE8800FABFF9 /* UIImage+JKSampleBuffer.m */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -3231,6 +3236,7 @@
 				A2958D001B358F0200D7AA0F /* UIApplication+JKPermissions.m in Sources */,
 				A218D8DF1A47A25100AB83CA /* UIWebView+JKCanvas.m in Sources */,
 				A281FB9E1AC8126F009040DA /* NSFileManagerDemoViewController.m in Sources */,
+				581B55D41ECBEE8800FABFF9 /* UIImage+JKSampleBuffer.m in Sources */,
 				A281FB3F1AC80001009040DA /* NSString+JKEmoji.m in Sources */,
 				A2EF56C01B21C3050005F730 /* NSManagedObjectContext+JKObjectClear.m in Sources */,
 				A22845281BE2095B000AD2F6 /* NSNumber+JKCGFloat.m in Sources */,
