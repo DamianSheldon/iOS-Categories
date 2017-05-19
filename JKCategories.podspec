@@ -1,4 +1,4 @@
-version = "1.6.7P";
+version = "1.6.8P";
 
 Pod::Spec.new do |s|
   s.name         = "JKCategories"
@@ -74,6 +74,14 @@ Pod::Spec.new do |s|
             samplebuffer.source_files = 'JKCategories/UIKit/UIImage/UIImage+JKSampleBuffer.{h,m}'
             samplebuffer.frameworks = 'CoreMedia'
         end
+    end
+
+    uikit.subspec 'UIColor' do |uicolor|
+        
+        uicolor.subspec 'HEX' do |hex|
+            hex.source_files = 'JKCategories/UIKit/UIColor/UIColor+JKHEX.{h,m}'
+        end
+
     end
 
   end
