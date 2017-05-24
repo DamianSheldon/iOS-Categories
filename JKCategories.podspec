@@ -1,4 +1,4 @@
-version = "1.6.8P";
+version = "1.6.9P";
 
 Pod::Spec.new do |s|
   s.name         = "JKCategories"
@@ -32,6 +32,13 @@ Pod::Spec.new do |s|
 # Fix KEncrypt.h:11:9: error: include of non-modular header inside framework module 'JKCategories.NSData_JKEncrypt': '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.3.sdk/usr/include/CommonCrypto/CommonCryptor.h' [-Werror,-Wnon-modular-include-in-framework-module]
         data.user_target_xcconfig = {'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'}
     end
+
+    foundation.subspec 'NSFileManager' do |filemanager|
+        
+        filemanager.source_files = 'JKCategories/Foundation/NSFileManager/*.{h,m}'
+
+    end
+
   end
 
   s.subspec 'UIKit' do |uikit|
