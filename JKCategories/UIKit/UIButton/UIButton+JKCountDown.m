@@ -19,6 +19,8 @@
     __block NSInteger timeOut = count; //倒计时时间
     
     self.enabled = NO;
+    self.layer.borderColor = [self titleColorForState:UIControlStateDisabled].CGColor;
+
     [self setTitle:[waitTitle stringByReplacingOccurrencesOfString:@"#" withString:[NSString stringWithFormat:@"%ld", (long)count]] forState:UIControlStateDisabled];
     [self sizeToFit];
     
@@ -35,6 +37,7 @@
             dispatch_async(dispatch_get_main_queue(), ^{
                 //设置界面的按钮显示 根据自己需求设置
                 strongSelf.enabled = YES;
+                strongSelf.layer.borderColor = [self titleColorForState:UIControlStateNormal].CGColor;
                 [strongSelf sizeToFit];
             });
         }
