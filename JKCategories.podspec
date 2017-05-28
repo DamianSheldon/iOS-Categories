@@ -1,4 +1,4 @@
-version = "1.7.0P";
+version = "1.7.1P";
 
 Pod::Spec.new do |s|
   s.name         = "JKCategories"
@@ -67,6 +67,10 @@ Pod::Spec.new do |s|
         
         uibutton.subspec 'CountDown' do |countdown|
             countdown.source_files = 'JKCategories/UIKit/UIButton/UIButton+JKCountDown.{h,m}'
+        end
+
+        uibutton.subspec 'ImagePosition' do |imageposition|
+            imageposition.source_files = 'JKCategories/UIKit/UIButton/UIButton+JKImagePosition.{h,m}'
         end
 
     end
