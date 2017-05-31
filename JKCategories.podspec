@@ -1,4 +1,4 @@
-version = "1.7.1P";
+version = "1.7.2P";
 
 Pod::Spec.new do |s|
   s.name         = "JKCategories"
@@ -22,8 +22,15 @@ Pod::Spec.new do |s|
   s.subspec 'Foundation' do |foundation|
 
     foundation.subspec 'NSString' do |string|
-        string.source_files = 'JKCategories/Foundation/NSString/**/*.{h,m}'
-        string.dependency 'JKCategories/Foundation/NSData'
+        #string.source_files = 'JKCategories/Foundation/NSString/**/*.{h,m}'
+        #string.dependency 'JKCategories/Foundation/NSData'
+
+        string.subspec 'Hash' do |hash|
+            
+            hash.source_files = 'JKCategories/Foundation/NSString/NSString+JKHash.{h,m}'
+
+        end
+
     end 
 
     foundation.subspec 'NSData' do |data|
