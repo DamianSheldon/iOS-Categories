@@ -1,4 +1,4 @@
-version = "1.7.2P";
+version = "1.7.3P";
 
 Pod::Spec.new do |s|
   s.name         = "JKCategories"
@@ -28,6 +28,12 @@ Pod::Spec.new do |s|
         string.subspec 'Hash' do |hash|
             
             hash.source_files = 'JKCategories/Foundation/NSString/NSString+JKHash.{h,m}'
+
+        end
+
+        string.subspec 'NormalRegex' do |normalregex|
+        
+            normalregex.source_files = 'JKCategories/Foundation/NSString/NSString+JKNormalRegex.{h,m}'
 
         end
 
