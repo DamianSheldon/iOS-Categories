@@ -46,7 +46,7 @@ Pod::Spec.new do |s|
         #data.user_target_xcconfig = {'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'}
 
         data.subspec 'Hash' do |hash|
-            data.source_files = 'JKCategories/Foundation/NSData/NSData+JKHash.{h,m}'
+            hash.source_files = 'JKCategories/Foundation/NSData/NSData+JKHash.{h,m}'
         end
 
     end
