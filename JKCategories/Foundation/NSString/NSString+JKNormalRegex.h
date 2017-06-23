@@ -150,6 +150,8 @@
  */
 - (BOOL)jk_isValidTaxNo;
 
+- (BOOL)jk_isValidateByRegex:(NSString *)regex;
+
 /**
  @brief     是否符合最小长度、最长长度，是否包含中文,首字母是否可以为数字
  @param     minLenth 账号最小长度
