@@ -1,4 +1,4 @@
-version = "1.7.7P";
+version = "1.7.8P";
 
 Pod::Spec.new do |s|
   s.name         = "JKCategories"
@@ -93,6 +93,10 @@ Pod::Spec.new do |s|
 
         uibutton.subspec 'TouchAreaInsets' do |touchareainsets|
             touchareainsets.source_files = 'JKCategories/UIKit/UIButton/UIButton+JKTouchAreaInsets.{h,m}'
+        end
+
+        uibutton.subspec 'RedDot' do |reddot|
+            reddot.source_files = 'JKCategories/UIKit/UIButton/UIButton+JKRedDot.{h,m}'
         end
 
     end

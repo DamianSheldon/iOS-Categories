@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		581B55D41ECBEE8800FABFF9 /* UIImage+JKSampleBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 581B55D31ECBEE8800FABFF9 /* UIImage+JKSampleBuffer.m */; };
 		588F0B1C1EC05F050067BEA5 /* UIView+JKBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 588F0B1B1EC05F050067BEA5 /* UIView+JKBorder.m */; };
+		589783F61F0F178C00AAE29E /* UIView+JKRedDot.m in Sources */ = {isa = PBXBuildFile; fileRef = 589783F51F0F178C00AAE29E /* UIView+JKRedDot.m */; };
 		7926E6931B736E8200888EB9 /* UIViewController+JKBackButtonItemTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7926E6921B736E8200888EB9 /* UIViewController+JKBackButtonItemTitle.m */; };
 		7982561A1B3A59060033A0C1 /* NSString+JKNormalRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 798256191B3A59060033A0C1 /* NSString+JKNormalRegex.m */; };
 		A202D9621B0F6C4400EAB199 /* NSDate+JKReporting.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9611B0F6C4400EAB199 /* NSDate+JKReporting.m */; };
@@ -373,6 +374,8 @@
 		581B55D31ECBEE8800FABFF9 /* UIImage+JKSampleBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKSampleBuffer.m"; sourceTree = "<group>"; };
 		588F0B1A1EC05F050067BEA5 /* UIView+JKBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JKBorder.h"; sourceTree = "<group>"; };
 		588F0B1B1EC05F050067BEA5 /* UIView+JKBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JKBorder.m"; sourceTree = "<group>"; };
+		589783F41F0F178C00AAE29E /* UIView+JKRedDot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JKRedDot.h"; sourceTree = "<group>"; };
+		589783F51F0F178C00AAE29E /* UIView+JKRedDot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JKRedDot.m"; sourceTree = "<group>"; };
 		7926E6911B736E8200888EB9 /* UIViewController+JKBackButtonItemTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JKBackButtonItemTitle.h"; sourceTree = "<group>"; };
 		7926E6921B736E8200888EB9 /* UIViewController+JKBackButtonItemTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JKBackButtonItemTitle.m"; sourceTree = "<group>"; };
 		798256181B3A59060033A0C1 /* NSString+JKNormalRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JKNormalRegex.h"; sourceTree = "<group>"; };
@@ -2398,6 +2401,8 @@
 				A232AC151B38EC9F00A149D3 /* UIView+JKRecursion.m */,
 				588F0B1A1EC05F050067BEA5 /* UIView+JKBorder.h */,
 				588F0B1B1EC05F050067BEA5 /* UIView+JKBorder.m */,
+				589783F41F0F178C00AAE29E /* UIView+JKRedDot.h */,
+				589783F51F0F178C00AAE29E /* UIView+JKRedDot.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -3239,6 +3244,7 @@
 				581B55D41ECBEE8800FABFF9 /* UIImage+JKSampleBuffer.m in Sources */,
 				A281FB3F1AC80001009040DA /* NSString+JKEmoji.m in Sources */,
 				A2EF56C01B21C3050005F730 /* NSManagedObjectContext+JKObjectClear.m in Sources */,
+				589783F61F0F178C00AAE29E /* UIView+JKRedDot.m in Sources */,
 				A22845281BE2095B000AD2F6 /* NSNumber+JKCGFloat.m in Sources */,
 				A202D9B81B1033AC00EAB199 /* UIApplication+JKKeyboardFrame.m in Sources */,
 				A202D9A71B102D7800EAB199 /* NSNumberDemoViewController.m in Sources */,

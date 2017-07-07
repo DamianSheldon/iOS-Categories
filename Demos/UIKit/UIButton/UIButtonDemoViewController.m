@@ -11,6 +11,8 @@
 #import "UIButton+JKBlock.h"
 #import "UIControl+JKActionBlocks.h"
 #import "UIControl+JKBlock.h"
+#import "UIView+JKRedDot.h"
+
 @interface UIButtonDemoViewController ()
 
 @end
@@ -19,7 +21,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    
     [self.blockButton jk_handleControlEvents:UIControlEventTouchDragInside withBlock:^(id weakSender) {
         NSLog(@"UIControlEventTouchDragInside");
     }];
@@ -36,12 +39,7 @@
         
     }];
    
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-    
+    [self.blockButton jk_showTopRightRedDot];
 }
 
 /*
