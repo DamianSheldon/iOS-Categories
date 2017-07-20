@@ -1,4 +1,4 @@
-version = "1.7.9P";
+version = "1.8.0P";
 
 Pod::Spec.new do |s|
   s.name         = "JKCategories"
@@ -127,7 +127,7 @@ Pod::Spec.new do |s|
 
     avfoundation.subspec 'AVAssetImageGenerator' do |avassetimagegenerator|
       
-      avassetimagegenerator.subspec 'Additions' do
+      avassetimagegenerator.subspec 'Additions' do |additions|
         additions.source_files = 'JKCategories/AVFoundation/AVAssetImageGenerator+JKAdditions.{h,m}'
       end
 
