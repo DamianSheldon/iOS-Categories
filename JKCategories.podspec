@@ -1,4 +1,4 @@
-version = "1.7.8P";
+version = "1.7.9P";
 
 Pod::Spec.new do |s|
   s.name         = "JKCategories"
@@ -118,6 +118,18 @@ Pod::Spec.new do |s|
         uicolor.subspec 'HEX' do |hex|
             hex.source_files = 'JKCategories/UIKit/UIColor/UIColor+JKHEX.{h,m}'
         end
+
+    end
+
+  end
+
+  s.subspec 'AVFoundation' do |avfoundation|
+
+    avfoundation.subspec 'AVAssetImageGenerator' do |avassetimagegenerator|
+      
+      avassetimagegenerator.subspec 'Additions' do
+        additions.source_files = 'JKCategories/AVFoundation/AVAssetImageGenerator+JKAdditions.{h,m}'
+      end
 
     end
 
