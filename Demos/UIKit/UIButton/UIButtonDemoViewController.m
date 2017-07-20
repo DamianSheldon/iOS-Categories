@@ -26,8 +26,10 @@
     [self.blockButton jk_handleControlEvents:UIControlEventTouchDragInside withBlock:^(id weakSender) {
         NSLog(@"UIControlEventTouchDragInside");
     }];
-    [self.blockButton jk_handleControlEvents:UIControlEventTouchUpInside withBlock:^(id weakSender) {
+    [self.blockButton jk_handleControlEvents:UIControlEventTouchUpInside withBlock:^(UIButton *weakSender) {
         NSLog(@"UIControlEventTouchUpInside");
+        
+        [weakSender jk_hideRedDot];
     }];
     
     [self.blockButton jk_touchUpInside:^{
