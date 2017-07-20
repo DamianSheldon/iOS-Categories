@@ -14,8 +14,7 @@
 
 + (UIImage *)jk_firstFrameStillImageFromVideoOfURL:(NSURL *)URLOfVideo
 {
-    CMTime startpoint = CMTimeMakeWithSeconds(0, 600);
-    return [self jk_stillImageFromVideoOfURL:URLOfVideo atTime:startpoint];
+    return [self jk_stillImageFromVideoOfURL:URLOfVideo atTime:kCMTimeZero];
 }
 
 + (UIImage *)jk_stillImageFromVideoOfURL:(NSURL *)URLOfVideo atTime:(CMTime)requestedTime
@@ -24,8 +23,9 @@
         return nil;
     }
     
-    AVAsset *asset;
+    AVAsset *asset = [AVAsset assetWithURL:URLOfVideo];
     AVAssetImageGenerator *imageGenerator = [[AVAssetImageGenerator alloc] initWithAsset:asset];
+    imageGenerator.appliesPreferredTrackTransform = YES;
 
     NSError *error;
     CMTime actualTime;
@@ -34,9 +34,9 @@
     
     if (requestedTimeImage != NULL) {
         
-        NSString *actualTimeString = (NSString *)CFBridgingRelease(CMTimeCopyDescription(NULL, actualTime));
-        NSString *requestedTimeString = (NSString *)CFBridgingRelease(CMTimeCopyDescription(NULL, requestedTime));
-        NSLog(@"Got halfWayImage: Asked for %@, got %@", requestedTimeString, actualTimeString);
+//        NSString *actualTimeString = (NSString *)CFBridgingRelease(CMTimeCopyDescription(NULL, actualTime));
+//        NSString *requestedTimeString = (NSString *)CFBridgingRelease(CMTimeCopyDescription(NULL, requestedTime));
+//        NSLog(@"Got requestedTimeImage: Asked for %@, got %@", requestedTimeString, actualTimeString);
         
         // Do something interesting with the image.
         UIImage *resultImage = [UIImage imageWithCGImage:requestedTimeImage];
