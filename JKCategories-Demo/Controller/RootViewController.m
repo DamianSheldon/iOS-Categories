@@ -81,14 +81,14 @@
                         @"NSURLSession"
                         ],
             
-    @"CoreLocation":@[@"CALayer",
+    @"QuartzCore":@[@"CALayer",
                       @"CAMediaTimingFunction",
                       @"CAAnimation",
                       @"CAShapeLayer",
                       @"CATransaction"
                       ] ,
             
-      @"QuartzCore":@[@"CLLocation",
+      @"CoreLocation":@[@"CLLocation",
                       @"CLLocationManager"
                      ] ,
         @"CoreData":@[@"NSManagedObjectContext",
