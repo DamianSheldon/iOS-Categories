@@ -8,6 +8,7 @@
 
 #import "UIImageDemoViewController.h"
 #import "UIImageRotateDemoViewController.h"
+#import "UIImageScaleDemoViewController.h"
 
 static NSString *const sCellIdentifier = @"cell";
 
@@ -68,6 +69,12 @@ static NSString *const sCellIdentifier = @"cell";
             flowLayout.itemSize = CGSizeMake(width, height);
             
             targetController = [[UIImageRotateDemoViewController alloc] initWithCollectionViewLayout:flowLayout];
+            break;
+        }
+        case 1: {
+            UICollectionViewFlowLayout *flowLayout = [UICollectionViewFlowLayout new];
+
+            targetController = [[UIImageScaleDemoViewController alloc] initWithCollectionViewLayout:flowLayout];
             break;
         }
         default:
