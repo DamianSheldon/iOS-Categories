@@ -1,0 +1,14 @@
+PODS:
+  - DMLWidget/DMLCollectionHeaderView (0.5.0)
+  - DMLWidget/DMLCollectionViewCell (0.5.0)
+
+DEPENDENCIES:
+  - DMLWidget/DMLCollectionHeaderView (= 0.5.0)
+  - DMLWidget/DMLCollectionViewCell (= 0.5.0)
+
+SPEC CHECKSUMS:
+  DMLWidget: b096cf652dba4451b49ae85103b9cc48fb614d18
+
+PODFILE CHECKSUM: bbfa968876df4b5e2f23c10e097969f157ed5f05
+
+COCOAPODS: 1.2.1

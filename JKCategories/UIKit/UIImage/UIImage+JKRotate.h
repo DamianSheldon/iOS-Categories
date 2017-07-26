@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-//CGFloat DegreesToRadiansForOrientation(CGFloat degrees) {return degrees * M_PI / 180;};
-//CGFloat RadiansToDegreesForOrientation(CGFloat radians) {return radians * 180/M_PI;};
-@interface UIImage (JKOrientation)
+
+@interface UIImage (JKRotate)
 /**
  *  @brief  修正图片的方向
  *
@@ -17,7 +16,7 @@
  *
  *  @return 修正方向后的图片
  */
-+ (UIImage *)jk_fixOrientation:(UIImage *)srcImg;
++ (UIImage *)jk_fixOrientation:(UIImage *)srcImg __attribute__((deprecated("Use + (UIImage *)imageWithCGImage:(CGImageRef)cgImage scale:(CGFloat)scale orientation:(UIImageOrientation)orientation instead.")));
 /**
  *  @brief  旋转图片
  *
@@ -56,7 +55,7 @@
  *
  *  @return 弧度
  */
-+(CGFloat)jk_degreesToRadians:(CGFloat)degrees;
++ (CGFloat)jk_degreesToRadians:(CGFloat)degrees;
 /**
  *  @brief  弧度转角度
  *
@@ -64,6 +63,6 @@
  *
  *  @return 角度
  */
-+(CGFloat)jk_radiansToDegrees:(CGFloat)radians;
++ (CGFloat)jk_radiansToDegrees:(CGFloat)radians;
 
 @end

@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33F3A774CFE58BBE84298AA6 /* libPods-JKCategories-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A440AD401C3BCF96C621745 /* libPods-JKCategories-Demo.a */; };
 		581B55D41ECBEE8800FABFF9 /* UIImage+JKSampleBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 581B55D31ECBEE8800FABFF9 /* UIImage+JKSampleBuffer.m */; };
 		588F0B1C1EC05F050067BEA5 /* UIView+JKBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 588F0B1B1EC05F050067BEA5 /* UIView+JKBorder.m */; };
 		589783F61F0F178C00AAE29E /* UIView+JKRedDot.m in Sources */ = {isa = PBXBuildFile; fileRef = 589783F51F0F178C00AAE29E /* UIView+JKRedDot.m */; };
 		589CB29F1F2099D7006431A8 /* AVAssetImageGenerator+JKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 589CB29E1F2099D7006431A8 /* AVAssetImageGenerator+JKAdditions.m */; };
+		58AF9A181F27320000CC6502 /* UIImageRotateDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AF9A171F27320000CC6502 /* UIImageRotateDemoViewController.m */; };
+		58AF9A231F28711D00CC6502 /* UIImage+JKRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AF9A221F28711D00CC6502 /* UIImage+JKRotate.m */; };
 		7926E6931B736E8200888EB9 /* UIViewController+JKBackButtonItemTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7926E6921B736E8200888EB9 /* UIViewController+JKBackButtonItemTitle.m */; };
 		7982561A1B3A59060033A0C1 /* NSString+JKNormalRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 798256191B3A59060033A0C1 /* NSString+JKNormalRegex.m */; };
 		A202D9621B0F6C4400EAB199 /* NSDate+JKReporting.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9611B0F6C4400EAB199 /* NSDate+JKReporting.m */; };
@@ -301,7 +304,6 @@
 		A2C12BA21B1C282C00EAD198 /* UITableView+JKiOS7Style.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C12BA11B1C282C00EAD198 /* UITableView+JKiOS7Style.m */; };
 		A2C12BA81B1C284F00EAD198 /* UITextField+JKSelect.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C12BA71B1C284F00EAD198 /* UITextField+JKSelect.m */; };
 		A2C12BAB1B1C286C00EAD198 /* UITextView+JKSelect.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C12BAA1B1C286C00EAD198 /* UITextView+JKSelect.m */; };
-		A2C1ADCE1A58F35400E3BAFF /* UIImage+JKOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C1ADCD1A58F35400E3BAFF /* UIImage+JKOrientation.m */; };
 		A2C87DC81CF86CC200B3DDDC /* NSMutableURLRequest+JKUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C87DC71CF86CC200B3DDDC /* NSMutableURLRequest+JKUpload.m */; };
 		A2C97D851C96576E00614B98 /* UICollectionViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C97D831C96576E00614B98 /* UICollectionViewDemoViewController.m */; };
 		A2C97D861C96576E00614B98 /* UICollectionViewDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2C97D841C96576E00614B98 /* UICollectionViewDemoViewController.xib */; };
@@ -371,6 +373,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A440AD401C3BCF96C621745 /* libPods-JKCategories-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JKCategories-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		536B017DBDFD83CB0B88B7DF /* Pods-JKCategories-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKCategories-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JKCategories-Demo/Pods-JKCategories-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		581B55D21ECBEE8800FABFF9 /* UIImage+JKSampleBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKSampleBuffer.h"; sourceTree = "<group>"; };
 		581B55D31ECBEE8800FABFF9 /* UIImage+JKSampleBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKSampleBuffer.m"; sourceTree = "<group>"; };
 		588F0B1A1EC05F050067BEA5 /* UIView+JKBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JKBorder.h"; sourceTree = "<group>"; };
@@ -379,10 +383,16 @@
 		589783F51F0F178C00AAE29E /* UIView+JKRedDot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JKRedDot.m"; sourceTree = "<group>"; };
 		589CB29D1F2099D7006431A8 /* AVAssetImageGenerator+JKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVAssetImageGenerator+JKAdditions.h"; sourceTree = "<group>"; };
 		589CB29E1F2099D7006431A8 /* AVAssetImageGenerator+JKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVAssetImageGenerator+JKAdditions.m"; sourceTree = "<group>"; };
+		58AF9A161F27320000CC6502 /* UIImageRotateDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageRotateDemoViewController.h; sourceTree = "<group>"; };
+		58AF9A171F27320000CC6502 /* UIImageRotateDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageRotateDemoViewController.m; sourceTree = "<group>"; };
+		58AF9A211F28711D00CC6502 /* UIImage+JKRotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKRotate.h"; sourceTree = "<group>"; };
+		58AF9A221F28711D00CC6502 /* UIImage+JKRotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKRotate.m"; sourceTree = "<group>"; };
+		58AF9A241F28718200CC6502 /* JKCategories.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JKCategories.podspec; sourceTree = "<group>"; };
 		7926E6911B736E8200888EB9 /* UIViewController+JKBackButtonItemTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JKBackButtonItemTitle.h"; sourceTree = "<group>"; };
 		7926E6921B736E8200888EB9 /* UIViewController+JKBackButtonItemTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JKBackButtonItemTitle.m"; sourceTree = "<group>"; };
 		798256181B3A59060033A0C1 /* NSString+JKNormalRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JKNormalRegex.h"; sourceTree = "<group>"; };
 		798256191B3A59060033A0C1 /* NSString+JKNormalRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JKNormalRegex.m"; sourceTree = "<group>"; };
+		915FB5BC8588DDCB6EBD8611 /* Pods-JKCategories-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKCategories-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JKCategories-Demo/Pods-JKCategories-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		A202D9601B0F6C4400EAB199 /* NSDate+JKReporting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+JKReporting.h"; sourceTree = "<group>"; };
 		A202D9611B0F6C4400EAB199 /* NSDate+JKReporting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+JKReporting.m"; sourceTree = "<group>"; };
 		A202D9631B0F6DF900EAB199 /* NSString+JKMIME.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JKMIME.h"; sourceTree = "<group>"; };
@@ -903,8 +913,6 @@
 		A2C12BA71B1C284F00EAD198 /* UITextField+JKSelect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+JKSelect.m"; sourceTree = "<group>"; };
 		A2C12BA91B1C286C00EAD198 /* UITextView+JKSelect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+JKSelect.h"; sourceTree = "<group>"; };
 		A2C12BAA1B1C286C00EAD198 /* UITextView+JKSelect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+JKSelect.m"; sourceTree = "<group>"; };
-		A2C1ADCC1A58F35400E3BAFF /* UIImage+JKOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKOrientation.h"; sourceTree = "<group>"; };
-		A2C1ADCD1A58F35400E3BAFF /* UIImage+JKOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKOrientation.m"; sourceTree = "<group>"; };
 		A2C87DC71CF86CC200B3DDDC /* NSMutableURLRequest+JKUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableURLRequest+JKUpload.m"; sourceTree = "<group>"; };
 		A2C97D821C96576E00614B98 /* UICollectionViewDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionViewDemoViewController.h; sourceTree = "<group>"; };
 		A2C97D831C96576E00614B98 /* UICollectionViewDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewDemoViewController.m; sourceTree = "<group>"; };
@@ -1038,6 +1046,7 @@
 				A2EF56B11B21C2C80005F730 /* CoreLocation.framework in Frameworks */,
 				A2EF56AF1B21C2C30005F730 /* CoreData.framework in Frameworks */,
 				A2FD5B5D1A52706F00555EA2 /* libz.dylib in Frameworks */,
+				33F3A774CFE58BBE84298AA6 /* libPods-JKCategories-Demo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1051,6 +1060,24 @@
 				589CB29E1F2099D7006431A8 /* AVAssetImageGenerator+JKAdditions.m */,
 			);
 			path = AVFoundation;
+			sourceTree = "<group>";
+		};
+		58AF9A151F2731D600CC6502 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				58AF9A161F27320000CC6502 /* UIImageRotateDemoViewController.h */,
+				58AF9A171F27320000CC6502 /* UIImageRotateDemoViewController.m */,
+			);
+			name = Operations;
+			sourceTree = "<group>";
+		};
+		849FF95AB68130D4E0A949C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				915FB5BC8588DDCB6EBD8611 /* Pods-JKCategories-Demo.debug.xcconfig */,
+				536B017DBDFD83CB0B88B7DF /* Pods-JKCategories-Demo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		A202D9681B0F6F9800EAB199 /* UIBarButtonItem */ = {
@@ -1421,11 +1448,13 @@
 		A22725C51A3E72D50061605B = {
 			isa = PBXGroup;
 			children = (
+				58AF9A241F28718200CC6502 /* JKCategories.podspec */,
 				A22725D01A3E72D50061605B /* JKCategories */,
 				A202D9D01B103F9400EAB199 /* JKCategories-Demo */,
 				A281FB4C1AC80F61009040DA /* Demos */,
 				A22725CF1A3E72D50061605B /* Products */,
 				A2FD5B5B1A52704800555EA2 /* Frameworks */,
+				849FF95AB68130D4E0A949C8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1916,6 +1945,7 @@
 		A281FB601AC8101F009040DA /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
+				58AF9A151F2731D600CC6502 /* Operations */,
 				A281FBCD1AC81324009040DA /* UIImageDemoViewController.h */,
 				A281FBCE1AC81324009040DA /* UIImageDemoViewController.m */,
 				A281FBCF1AC81324009040DA /* UIImageDemoViewController.xib */,
@@ -2306,6 +2336,8 @@
 		A28BE2F81A3E9FDC005C4AC6 /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
+				58AF9A211F28711D00CC6502 /* UIImage+JKRotate.h */,
+				58AF9A221F28711D00CC6502 /* UIImage+JKRotate.m */,
 				A2958D371B35A08000D7AA0F /* UIImage+JKVector.h */,
 				A2958D381B35A08000D7AA0F /* UIImage+JKVector.m */,
 				A2958D251B359A5E00D7AA0F /* UIImage+JKBetterFace.h */,
@@ -2326,8 +2358,6 @@
 				A28BE3041A3E9FDC005C4AC6 /* UIImage+JKRoundedCorner.m */,
 				A2FD5B301A52574C00555EA2 /* UIImage+JKMerge.h */,
 				A2FD5B311A52574C00555EA2 /* UIImage+JKMerge.m */,
-				A2C1ADCC1A58F35400E3BAFF /* UIImage+JKOrientation.h */,
-				A2C1ADCD1A58F35400E3BAFF /* UIImage+JKOrientation.m */,
 				A219B8B81A615E3800135327 /* UIImage+JKCapture.h */,
 				A219B8B91A615E3800135327 /* UIImage+JKCapture.m */,
 				A2E538EA1A775A9900A5D921 /* UIImage+JKRemoteSize.h */,
@@ -2907,6 +2937,7 @@
 				A2EF56B01B21C2C80005F730 /* CoreLocation.framework */,
 				A2EF56AE1B21C2C30005F730 /* CoreData.framework */,
 				A2FD5B5C1A52706F00555EA2 /* libz.dylib */,
+				1A440AD401C3BCF96C621745 /* libPods-JKCategories-Demo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2936,9 +2967,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A22725EB1A3E72D50061605B /* Build configuration list for PBXNativeTarget "JKCategories-Demo" */;
 			buildPhases = (
+				18C784152F2945EC62D68908 /* [CP] Check Pods Manifest.lock */,
 				A22725CA1A3E72D50061605B /* Sources */,
 				A22725CB1A3E72D50061605B /* Frameworks */,
 				A22725CC1A3E72D50061605B /* Resources */,
+				E10DD381629E5BAE68B38682 /* [CP] Embed Pods Frameworks */,
+				90E862B043ED9D8F24F50920 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2960,6 +2994,7 @@
 				TargetAttributes = {
 					A22725CD1A3E72D50061605B = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 98WR9248J9;
 					};
 				};
 			};
@@ -3061,6 +3096,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		18C784152F2945EC62D68908 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		90E862B043ED9D8F24F50920 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JKCategories-Demo/Pods-JKCategories-Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E10DD381629E5BAE68B38682 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JKCategories-Demo/Pods-JKCategories-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A22725CA1A3E72D50061605B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -3118,6 +3201,7 @@
 				A280E5251A5233A700E6ACA2 /* UIButton+JKBlock.m in Sources */,
 				A281FBA81AC81299009040DA /* NSSetDemoViewController.m in Sources */,
 				A2EF56CF1B21C4230005F730 /* NSFetchRequest+JKExtensions.m in Sources */,
+				58AF9A231F28711D00CC6502 /* UIImage+JKRotate.m in Sources */,
 				A2958D361B359D3300D7AA0F /* UIDevice+JKPasscodeStatus.m in Sources */,
 				A202D9621B0F6C4400EAB199 /* NSDate+JKReporting.m in Sources */,
 				A24EC2FC1B74E05300CE538B /* NSString+JKMatcher.m in Sources */,
@@ -3185,6 +3269,7 @@
 				A202D9941B0F8FB000EAB199 /* UIButton+JKSubmitting.m in Sources */,
 				A24EC2ED1B74DB8900CE538B /* NSURL+JKQueryDictionary.m in Sources */,
 				A28BE38A1A3ED364005C4AC6 /* UITextView+JKPlaceHolder.m in Sources */,
+				58AF9A181F27320000CC6502 /* UIImageRotateDemoViewController.m in Sources */,
 				A284C14D1AEBD39600D90ED5 /* NSDate+JKExtension.m in Sources */,
 				A281FC121AC813F5009040DA /* UINavigationControllerDemoViewController.m in Sources */,
 				BCB79A0C1AFDF23500C12525 /* UIAlertView+JKBlock.m in Sources */,
@@ -3210,7 +3295,6 @@
 				A2958D061B35906E00D7AA0F /* UIApplication+JKApplicationSize.m in Sources */,
 				A28BE3451A3EA292005C4AC6 /* NSString+JKHash.m in Sources */,
 				A21F34DC1B0F302E00D73A91 /* UILabel+JKAutomaticWriting.m in Sources */,
-				A2C1ADCE1A58F35400E3BAFF /* UIImage+JKOrientation.m in Sources */,
 				A202D9D81B103F9400EAB199 /* AppDelegate.m in Sources */,
 				A281FBE01AC8137A009040DA /* UIResponderDemoViewController.m in Sources */,
 				A281FBBC1AC812E5009040DA /* UIBezierPathDemoViewController.m in Sources */,
@@ -3448,9 +3532,11 @@
 		};
 		A22725EC1A3E72D50061605B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 915FB5BC8588DDCB6EBD8611 /* Pods-JKCategories-Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 98WR9248J9;
 				INFOPLIST_FILE = "JKCategories-Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -3461,9 +3547,11 @@
 		};
 		A22725ED1A3E72D50061605B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 536B017DBDFD83CB0B88B7DF /* Pods-JKCategories-Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 98WR9248J9;
 				INFOPLIST_FILE = "JKCategories-Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

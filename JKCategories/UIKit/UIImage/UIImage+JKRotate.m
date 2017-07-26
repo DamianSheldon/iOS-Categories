@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 www.skyfox.org. All rights reserved.
 //
 
-#import "UIImage+JKOrientation.h"
+#import "UIImage+JKRotate.h"
 
-@implementation UIImage (JKOrientation)
+@implementation UIImage (JKRotate)
 /**
  *  @brief  修正图片的方向
  *
@@ -163,7 +163,7 @@
  *
  *  @return 弧度
  */
-+(CGFloat)jk_degreesToRadians:(CGFloat)degrees
++ (CGFloat)jk_degreesToRadians:(CGFloat)degrees
 {
     return degrees * M_PI / 180;
 }
@@ -174,7 +174,7 @@
  *
  *  @return 角度
  */
-+(CGFloat)jk_radiansToDegrees:(CGFloat)radians
++ (CGFloat)jk_radiansToDegrees:(CGFloat)radians
 {
     return radians * 180/M_PI;
 }

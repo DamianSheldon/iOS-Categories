@@ -53,7 +53,7 @@
 #import "UIImage+JKFXImage.h"
 #import "UIImage+JKGIF.h"
 #import "UIImage+JKMerge.h"
-#import "UIImage+JKOrientation.h"
+#import "UIImage+JKRotate.h"
 #import "UIImage+JKRemoteSize.h"
 #import "UIImage+JKResize.h"
 #import "UIImage+JKRoundedCorner.h"

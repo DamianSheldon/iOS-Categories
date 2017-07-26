@@ -1,4 +1,4 @@
-version = "1.8.1P";
+version = "1.8.2P";
 
 Pod::Spec.new do |s|
   s.name         = "JKCategories"
@@ -111,6 +111,11 @@ Pod::Spec.new do |s|
             samplebuffer.source_files = 'JKCategories/UIKit/UIImage/UIImage+JKSampleBuffer.{h,m}'
             samplebuffer.frameworks = 'CoreMedia'
         end
+
+        uiimage.subspec 'Rotate' do |rotate|
+            rotate.source_files = 'JKCategories/UIKit/UIImage/UIImage+JKRotate.{h,m}'
+        end
+
     end
 
     uikit.subspec 'UIColor' do |uicolor|
