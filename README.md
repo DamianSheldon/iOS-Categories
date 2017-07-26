@@ -44,8 +44,6 @@ Import the header file into any class where you wish to make use of the function
 
 More details can refer demos.
 
-"JKCategories.h",
-
 ## Subspecs of categories
 
 ### Foundation
@@ -53,7 +51,6 @@ More details can refer demos.
 * NSBundle
 * NSData
     * Hash
-    * NSFileManager
 
 * NSDate
 * NSDateFormatter
@@ -93,10 +90,16 @@ More details can refer demos.
     * RedDot
 
 * UIColor
+    * HEX
+
 * UIFont
 * UIControl
 * UIDevice
 * UIImage
+    * FXImage
+    * SampleBuffer
+    * Rotate
+
 * UIImageView
 * UILable
 * UINavigationBar
@@ -141,6 +144,10 @@ More details can refer demos.
 
 ### MapKit
 * MKMapView
+
+### AVFoundation
+* AVAssetImageGenerator
+    * Additions
 
 ## License
 
