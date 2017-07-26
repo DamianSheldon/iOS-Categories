@@ -388,6 +388,7 @@
 		58AF9A211F28711D00CC6502 /* UIImage+JKRotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKRotate.h"; sourceTree = "<group>"; };
 		58AF9A221F28711D00CC6502 /* UIImage+JKRotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKRotate.m"; sourceTree = "<group>"; };
 		58AF9A241F28718200CC6502 /* JKCategories.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JKCategories.podspec; sourceTree = "<group>"; };
+		58AF9A261F2874E500CC6502 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7926E6911B736E8200888EB9 /* UIViewController+JKBackButtonItemTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JKBackButtonItemTitle.h"; sourceTree = "<group>"; };
 		7926E6921B736E8200888EB9 /* UIViewController+JKBackButtonItemTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JKBackButtonItemTitle.m"; sourceTree = "<group>"; };
 		798256181B3A59060033A0C1 /* NSString+JKNormalRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JKNormalRegex.h"; sourceTree = "<group>"; };
@@ -1448,6 +1449,7 @@
 		A22725C51A3E72D50061605B = {
 			isa = PBXGroup;
 			children = (
+				58AF9A261F2874E500CC6502 /* README.md */,
 				58AF9A241F28718200CC6502 /* JKCategories.podspec */,
 				A22725D01A3E72D50061605B /* JKCategories */,
 				A202D9D01B103F9400EAB199 /* JKCategories-Demo */,
