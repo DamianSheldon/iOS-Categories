@@ -9,11 +9,14 @@
 
 // Private helper methods
 @interface UIImage (ResizePrivateMethods)
+
 - (UIImage *)jk_resizedImage:(CGSize)newSize
                 transform:(CGAffineTransform)transform
            drawTransposed:(BOOL)transpose
      interpolationQuality:(CGInterpolationQuality)quality;
+
 - (CGAffineTransform)jk_transformForOrientation:(CGSize)newSize;
+
 @end
 
 @implementation UIImage (JKResize)
@@ -35,7 +38,7 @@
                cornerRadius:(NSUInteger)cornerRadius
        interpolationQuality:(CGInterpolationQuality)quality {
     UIImage *resizedImage = [self jk_resizedImageWithContentMode:UIViewContentModeScaleAspectFill
-                                                       bounds:CGSizeMake(thumbnailSize, thumbnailSize)
+                                                       size:CGSizeMake(thumbnailSize, thumbnailSize)
                                          interpolationQuality:quality];
     
     // Crop out any part of the image that's larger than the thumbnail size
@@ -52,9 +55,20 @@
     return [transparentBorderImage jk_roundedCornerImage:cornerRadius borderSize:borderSize];
 }
 
+- (UIImage *)jk_resizedImageOfSize:(CGSize)newSize
+{
+    return [self jk_resizedImageOfSize:newSize interpolationQuality:kCGInterpolationDefault];
+}
+
+- (UIImage *)jk_resizedImageWithContentMode:(UIViewContentMode)contentMode
+                                       size:(CGSize)size
+{
+    return [self jk_resizedImageWithContentMode:contentMode size:size interpolationQuality:kCGInterpolationDefault];
+}
+
 // Returns a rescaled copy of the image, taking into account its orientation
 // The image will be scaled disproportionately if necessary to fit the bounds specified by the parameter
-- (UIImage *)jk_resizedImage:(CGSize)newSize interpolationQuality:(CGInterpolationQuality)quality {
+- (UIImage *)jk_resizedImageOfSize:(CGSize)newSize interpolationQuality:(CGInterpolationQuality)quality {
     BOOL drawTransposed;
     
     switch (self.imageOrientation) {
@@ -77,10 +91,10 @@
 
 // Resizes the image according to the given content mode, taking into account the image's orientation
 - (UIImage *)jk_resizedImageWithContentMode:(UIViewContentMode)contentMode
-                                  bounds:(CGSize)bounds
+                                  size:(CGSize)size
                     interpolationQuality:(CGInterpolationQuality)quality {
-    CGFloat horizontalRatio = bounds.width / self.size.width;
-    CGFloat verticalRatio = bounds.height / self.size.height;
+    CGFloat horizontalRatio = size.width / self.size.width;
+    CGFloat verticalRatio = size.height / self.size.height;
     CGFloat ratio;
     
     switch (contentMode) {
@@ -98,7 +112,7 @@
     
     CGSize newSize = CGSizeMake(round(self.size.width * ratio), round(self.size.height * ratio));
     
-    return [self jk_resizedImage:newSize interpolationQuality:quality];
+    return [self jk_resizedImageOfSize:newSize interpolationQuality:quality];
 }
 
 #pragma mark -
@@ -117,10 +131,9 @@
     
     // Build a context that's the same dimensions as the new size
 	uint32_t bitmapInfo = CGImageGetBitmapInfo(imageRef);
-	if((bitmapInfo == kCGImageAlphaLast) || (bitmapInfo == kCGImageAlphaNone))
+    if((bitmapInfo == kCGImageAlphaLast) || (bitmapInfo == kCGImageAlphaNone)) {
 		bitmapInfo = kCGImageAlphaNoneSkipLast;
-		
-    
+    }
     
     CGContextRef bitmap = CGBitmapContextCreate(NULL,
                                                 newRect.size.width,
@@ -130,6 +143,13 @@
                                                 CGImageGetColorSpace(imageRef),
                                                 bitmapInfo);
     
+    // Make sure anything we don't cover comes out white.  While the next
+    // steps ensures that we cover the entire image, there's a possibility
+    // that we're dealing with a transparent PNG.
+    
+    CGContextSetFillColorWithColor(bitmap, [UIColor whiteColor].CGColor);
+    CGContextFillRect(bitmap, CGRectMake(0.0f, 0.0f, newRect.size.width, newRect.size.height));
+
     // Rotate and/or flip the image if required by its orientation
     CGContextConcatCTM(bitmap, transform);
     

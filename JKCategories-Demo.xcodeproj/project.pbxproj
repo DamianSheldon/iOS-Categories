@@ -15,6 +15,10 @@
 		58AF9A181F27320000CC6502 /* UIImageRotateDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AF9A171F27320000CC6502 /* UIImageRotateDemoViewController.m */; };
 		58AF9A231F28711D00CC6502 /* UIImage+JKRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AF9A221F28711D00CC6502 /* UIImage+JKRotate.m */; };
 		58AF9A291F2882C600CC6502 /* UIImageScaleDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AF9A281F2882C600CC6502 /* UIImageScaleDemoViewController.m */; };
+		58AF9A2C1F2976D800CC6502 /* UIImage+JKCrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AF9A2B1F2976D800CC6502 /* UIImage+JKCrop.m */; };
+		58AF9A2F1F29770000CC6502 /* UIImage+JKThumbnail.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AF9A2E1F29770000CC6502 /* UIImage+JKThumbnail.m */; };
+		58AF9A321F297FCB00CC6502 /* UIImageResizeDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AF9A311F297FCB00CC6502 /* UIImageResizeDemoViewController.m */; };
+		58AF9A351F29959B00CC6502 /* UIImageThumbnailDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AF9A341F29959B00CC6502 /* UIImageThumbnailDemoViewController.m */; };
 		7926E6931B736E8200888EB9 /* UIViewController+JKBackButtonItemTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7926E6921B736E8200888EB9 /* UIViewController+JKBackButtonItemTitle.m */; };
 		7982561A1B3A59060033A0C1 /* NSString+JKNormalRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 798256191B3A59060033A0C1 /* NSString+JKNormalRegex.m */; };
 		A202D9621B0F6C4400EAB199 /* NSDate+JKReporting.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9611B0F6C4400EAB199 /* NSDate+JKReporting.m */; };
@@ -392,6 +396,14 @@
 		58AF9A261F2874E500CC6502 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		58AF9A271F2882C600CC6502 /* UIImageScaleDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageScaleDemoViewController.h; sourceTree = "<group>"; };
 		58AF9A281F2882C600CC6502 /* UIImageScaleDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageScaleDemoViewController.m; sourceTree = "<group>"; };
+		58AF9A2A1F2976D800CC6502 /* UIImage+JKCrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKCrop.h"; sourceTree = "<group>"; };
+		58AF9A2B1F2976D800CC6502 /* UIImage+JKCrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKCrop.m"; sourceTree = "<group>"; };
+		58AF9A2D1F29770000CC6502 /* UIImage+JKThumbnail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKThumbnail.h"; sourceTree = "<group>"; };
+		58AF9A2E1F29770000CC6502 /* UIImage+JKThumbnail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKThumbnail.m"; sourceTree = "<group>"; };
+		58AF9A301F297FCB00CC6502 /* UIImageResizeDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageResizeDemoViewController.h; sourceTree = "<group>"; };
+		58AF9A311F297FCB00CC6502 /* UIImageResizeDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageResizeDemoViewController.m; sourceTree = "<group>"; };
+		58AF9A331F29959B00CC6502 /* UIImageThumbnailDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageThumbnailDemoViewController.h; sourceTree = "<group>"; };
+		58AF9A341F29959B00CC6502 /* UIImageThumbnailDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageThumbnailDemoViewController.m; sourceTree = "<group>"; };
 		7926E6911B736E8200888EB9 /* UIViewController+JKBackButtonItemTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JKBackButtonItemTitle.h"; sourceTree = "<group>"; };
 		7926E6921B736E8200888EB9 /* UIViewController+JKBackButtonItemTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JKBackButtonItemTitle.m"; sourceTree = "<group>"; };
 		798256181B3A59060033A0C1 /* NSString+JKNormalRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JKNormalRegex.h"; sourceTree = "<group>"; };
@@ -1073,6 +1085,10 @@
 				58AF9A171F27320000CC6502 /* UIImageRotateDemoViewController.m */,
 				58AF9A271F2882C600CC6502 /* UIImageScaleDemoViewController.h */,
 				58AF9A281F2882C600CC6502 /* UIImageScaleDemoViewController.m */,
+				58AF9A301F297FCB00CC6502 /* UIImageResizeDemoViewController.h */,
+				58AF9A311F297FCB00CC6502 /* UIImageResizeDemoViewController.m */,
+				58AF9A331F29959B00CC6502 /* UIImageThumbnailDemoViewController.h */,
+				58AF9A341F29959B00CC6502 /* UIImageThumbnailDemoViewController.m */,
 			);
 			name = Operations;
 			sourceTree = "<group>";
@@ -2377,6 +2393,10 @@
 				A248782C1C55CC5C00AFF958 /* UIImage+JKSuperCompress.m */,
 				581B55D21ECBEE8800FABFF9 /* UIImage+JKSampleBuffer.h */,
 				581B55D31ECBEE8800FABFF9 /* UIImage+JKSampleBuffer.m */,
+				58AF9A2A1F2976D800CC6502 /* UIImage+JKCrop.h */,
+				58AF9A2B1F2976D800CC6502 /* UIImage+JKCrop.m */,
+				58AF9A2D1F29770000CC6502 /* UIImage+JKThumbnail.h */,
+				58AF9A2E1F29770000CC6502 /* UIImage+JKThumbnail.m */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -3172,6 +3192,7 @@
 				A28BE3671A3EAF2E005C4AC6 /* UIColor+JKGradient.m in Sources */,
 				A28BE2E81A3E9F48005C4AC6 /* NSData+JKEncrypt.m in Sources */,
 				A281FC081AC813DF009040DA /* UIWebViewDemoViewController.m in Sources */,
+				58AF9A351F29959B00CC6502 /* UIImageThumbnailDemoViewController.m in Sources */,
 				A28BE3861A3ECF49005C4AC6 /* NSObject+JKGCD.m in Sources */,
 				A22103FF1CF8938800CE6547 /* NSTimer+JKBlocks.m in Sources */,
 				A281FBB21AC812BA009040DA /* NSTimerDemoViewController.m in Sources */,
@@ -3284,6 +3305,7 @@
 				A2C97D851C96576E00614B98 /* UICollectionViewDemoViewController.m in Sources */,
 				A281FBEF1AC8139D009040DA /* UITableViewCellDemoViewController.m in Sources */,
 				A2FD5B471A52636100555EA2 /* UIResponder+JKChain.m in Sources */,
+				58AF9A321F297FCB00CC6502 /* UIImageResizeDemoViewController.m in Sources */,
 				A2958CC81B35804600D7AA0F /* CAShapeLayer+JKUIBezierPath.m in Sources */,
 				A2958D331B359CA900D7AA0F /* UIImageView+JKReflect.m in Sources */,
 				A2958D1E1B3597F500D7AA0F /* UITextView+JKPinchZoom.m in Sources */,
@@ -3367,6 +3389,7 @@
 				B8C8D1391DED106F0069354F /* UIBarButtonItem+JKBadge.m in Sources */,
 				A28BE2EC1A3E9F48005C4AC6 /* NSObject+JKAssociatedObject.m in Sources */,
 				A21F34C81B0F247800D73A91 /* UIScreenDemoViewController.m in Sources */,
+				58AF9A2F1F29770000CC6502 /* UIImage+JKThumbnail.m in Sources */,
 				A2958D1B1B35975A00D7AA0F /* UITextField+JKHistory.m in Sources */,
 				A2BD82101D0ED7C2006E32F0 /* NSString+JKStringPages.m in Sources */,
 				A280E53A1A52405A00E6ACA2 /* UIScrollView+JKAddition.m in Sources */,
@@ -3422,6 +3445,7 @@
 				7982561A1B3A59060033A0C1 /* NSString+JKNormalRegex.m in Sources */,
 				A2958CF01B35838100D7AA0F /* NSPersistentStoreCoordinatorDemoViewController.m in Sources */,
 				A281FBCB1AC8130E009040DA /* UIDeviceDemoViewController.m in Sources */,
+				58AF9A2C1F2976D800CC6502 /* UIImage+JKCrop.m in Sources */,
 				A281FC031AC813D4009040DA /* UIViewControllerDemoViewController.m in Sources */,
 				A24EC2E71B74D6B900CE538B /* NSRunLoop+JKPerformBlock.m in Sources */,
 				A2C12B9C1B1C27F100EAD198 /* NSData+JKHash.m in Sources */,

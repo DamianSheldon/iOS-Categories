@@ -36,6 +36,7 @@
 @interface UIImage (JKFXImage)
 
 - (UIImage *)jk_imageCroppedToRect:(CGRect)rect;
+
 - (UIImage *)jk_imageScaledToSize:(CGSize)size;
 - (UIImage *)jk_imageScaledToFitSize:(CGSize)size;
 - (UIImage *)jk_imageScaledToFillSize:(CGSize)size;

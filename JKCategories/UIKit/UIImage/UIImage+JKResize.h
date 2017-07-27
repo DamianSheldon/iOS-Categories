@@ -8,14 +8,22 @@
 
 @interface UIImage (JKResize)
 
-- (UIImage *)jk_croppedImage:(CGRect)bounds;
+- (UIImage *)jk_croppedImage:(CGRect)bounds __attribute__((deprecated("Use method under crop category instead.")));
+
 - (UIImage *)jk_thumbnailImage:(NSInteger)thumbnailSize
           transparentBorder:(NSUInteger)borderSize
                cornerRadius:(NSUInteger)cornerRadius
        interpolationQuality:(CGInterpolationQuality)quality;
-- (UIImage *)jk_resizedImage:(CGSize)newSize
-     interpolationQuality:(CGInterpolationQuality)quality;
+
+- (UIImage *)jk_resizedImageOfSize:(CGSize)newSize;
+
 - (UIImage *)jk_resizedImageWithContentMode:(UIViewContentMode)contentMode
-                                  bounds:(CGSize)bounds
+                                       size:(CGSize)size;
+
+- (UIImage *)jk_resizedImageOfSize:(CGSize)newSize
+     interpolationQuality:(CGInterpolationQuality)quality;
+
+- (UIImage *)jk_resizedImageWithContentMode:(UIViewContentMode)contentMode
+                                  size:(CGSize)size
                     interpolationQuality:(CGInterpolationQuality)quality;
 @end
