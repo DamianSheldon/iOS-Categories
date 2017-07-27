@@ -19,6 +19,9 @@
  *  @return 如果没有alpha通道 增加alpha通道
  */
 - (UIImage *)jk_imageWithAlpha;
+
+- (UIImage *)jk_imageWithAlpha:(CGFloat)alpha;
+
 /**
  *  @brief  增加透明边框
  *

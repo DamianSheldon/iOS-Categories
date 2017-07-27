@@ -33,16 +33,10 @@
 #import <UIKit/UIKit.h>
 
 
-@interface UIImage (JKFXImage)
+@interface UIImage (JKReflect)
 
 - (UIImage *)jk_reflectedImageWithScale:(CGFloat)scale;
+
 - (UIImage *)jk_imageWithReflectionWithScale:(CGFloat)scale gap:(CGFloat)gap alpha:(CGFloat)alpha;
-- (UIImage *)jk_imageWithShadowColor:(UIColor *)color offset:(CGSize)offset blur:(CGFloat)blur;
-- (UIImage *)jk_imageWithCornerRadius:(CGFloat)radius;
-- (UIImage *)jk_imageWithAlpha:(CGFloat)alpha;
-- (UIImage *)jk_imageWithMask:(UIImage *)maskImage;
-
-- (UIImage *)jk_maskImageFromImageAlpha;
-
 
 @end

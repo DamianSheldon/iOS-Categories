@@ -58,6 +58,22 @@
     return imageWithAlpha;
 }
 
+- (UIImage *)jk_imageWithAlpha:(CGFloat)alpha
+{
+    //create drawing context
+    UIGraphicsBeginImageContextWithOptions(self.size, NO, 0.0f);
+    
+    //draw with alpha
+    [self drawAtPoint:CGPointZero blendMode:kCGBlendModeNormal alpha:alpha];
+    
+    //capture resultant image
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    //return image
+    return image;
+}
+
 // Returns a copy of the image with a transparent border of the given size added around its edges.
 // If the image has no alpha layer, one will be added to it.
 /**

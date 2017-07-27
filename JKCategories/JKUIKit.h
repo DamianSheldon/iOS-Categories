@@ -50,7 +50,7 @@
 #import "UIImage+JKCapture.h"
 #import "UIImage+JKColor.h"
 #import "UIImage+JKFileName.h"
-#import "UIImage+JKFXImage.h"
+#import "UIImage+JKReflect.h"
 #import "UIImage+JKGIF.h"
 #import "UIImage+JKMerge.h"
 #import "UIImage+JKRotate.h"
