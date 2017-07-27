@@ -11,6 +11,7 @@
 #import "UIImageScaleDemoViewController.h"
 #import "UIImageResizeDemoViewController.h"
 #import "UIImageThumbnailDemoViewController.h"
+#import "UIImageCropDemoViewController.h"
 
 static NSString *const sCellIdentifier = @"cell";
 
@@ -94,6 +95,14 @@ static NSString *const sCellIdentifier = @"cell";
             targetController = [[UIImageThumbnailDemoViewController alloc] initWithCollectionViewLayout:flowLayout];
             break;
         }
+            
+        case 4: {
+            UICollectionViewFlowLayout *flowLayout = [UICollectionViewFlowLayout new];
+            
+            targetController = [[UIImageCropDemoViewController alloc] initWithCollectionViewLayout:flowLayout];
+            break;
+        }
+            
         default:
             break;
     }

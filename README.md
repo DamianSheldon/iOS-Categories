@@ -99,6 +99,9 @@ More details can refer demos.
     * FXImage
     * SampleBuffer
     * Rotate
+    * Resize
+    * Thumbnail
+    * Crop
 
 * UIImageView
 * UILable

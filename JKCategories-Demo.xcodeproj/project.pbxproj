@@ -19,6 +19,7 @@
 		58AF9A2F1F29770000CC6502 /* UIImage+JKThumbnail.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AF9A2E1F29770000CC6502 /* UIImage+JKThumbnail.m */; };
 		58AF9A321F297FCB00CC6502 /* UIImageResizeDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AF9A311F297FCB00CC6502 /* UIImageResizeDemoViewController.m */; };
 		58AF9A351F29959B00CC6502 /* UIImageThumbnailDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AF9A341F29959B00CC6502 /* UIImageThumbnailDemoViewController.m */; };
+		58AF9A381F29C15A00CC6502 /* UIImageCropDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AF9A371F29C15A00CC6502 /* UIImageCropDemoViewController.m */; };
 		7926E6931B736E8200888EB9 /* UIViewController+JKBackButtonItemTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7926E6921B736E8200888EB9 /* UIViewController+JKBackButtonItemTitle.m */; };
 		7982561A1B3A59060033A0C1 /* NSString+JKNormalRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 798256191B3A59060033A0C1 /* NSString+JKNormalRegex.m */; };
 		A202D9621B0F6C4400EAB199 /* NSDate+JKReporting.m in Sources */ = {isa = PBXBuildFile; fileRef = A202D9611B0F6C4400EAB199 /* NSDate+JKReporting.m */; };
@@ -404,6 +405,8 @@
 		58AF9A311F297FCB00CC6502 /* UIImageResizeDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageResizeDemoViewController.m; sourceTree = "<group>"; };
 		58AF9A331F29959B00CC6502 /* UIImageThumbnailDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageThumbnailDemoViewController.h; sourceTree = "<group>"; };
 		58AF9A341F29959B00CC6502 /* UIImageThumbnailDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageThumbnailDemoViewController.m; sourceTree = "<group>"; };
+		58AF9A361F29C15A00CC6502 /* UIImageCropDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageCropDemoViewController.h; sourceTree = "<group>"; };
+		58AF9A371F29C15A00CC6502 /* UIImageCropDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageCropDemoViewController.m; sourceTree = "<group>"; };
 		7926E6911B736E8200888EB9 /* UIViewController+JKBackButtonItemTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JKBackButtonItemTitle.h"; sourceTree = "<group>"; };
 		7926E6921B736E8200888EB9 /* UIViewController+JKBackButtonItemTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JKBackButtonItemTitle.m"; sourceTree = "<group>"; };
 		798256181B3A59060033A0C1 /* NSString+JKNormalRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JKNormalRegex.h"; sourceTree = "<group>"; };
@@ -1089,6 +1092,8 @@
 				58AF9A311F297FCB00CC6502 /* UIImageResizeDemoViewController.m */,
 				58AF9A331F29959B00CC6502 /* UIImageThumbnailDemoViewController.h */,
 				58AF9A341F29959B00CC6502 /* UIImageThumbnailDemoViewController.m */,
+				58AF9A361F29C15A00CC6502 /* UIImageCropDemoViewController.h */,
+				58AF9A371F29C15A00CC6502 /* UIImageCropDemoViewController.m */,
 			);
 			name = Operations;
 			sourceTree = "<group>";
@@ -3448,6 +3453,7 @@
 				58AF9A2C1F2976D800CC6502 /* UIImage+JKCrop.m in Sources */,
 				A281FC031AC813D4009040DA /* UIViewControllerDemoViewController.m in Sources */,
 				A24EC2E71B74D6B900CE538B /* NSRunLoop+JKPerformBlock.m in Sources */,
+				58AF9A381F29C15A00CC6502 /* UIImageCropDemoViewController.m in Sources */,
 				A2C12B9C1B1C27F100EAD198 /* NSData+JKHash.m in Sources */,
 				A284C1531AEBD6E400D90ED5 /* UIView+JKFind.m in Sources */,
 				A2FD5B601A52708900555EA2 /* NSURL+JKParam.m in Sources */,

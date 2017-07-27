@@ -1,5 +1,5 @@
 //
-//  UIImage+JKCrop.h
+//  UIImageCropDemoViewController.h
 //  JKCategories-Demo
 //
 //  Created by Meiliang Dong on 27/07/2017.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIImage (JKCrop)
-
-- (UIImage *)jk_croppedImageInRect:(CGRect)rect;
+@interface UIImageCropDemoViewController : UICollectionViewController
 
 @end

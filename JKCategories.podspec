@@ -1,4 +1,4 @@
-version = "1.8.2P";
+version = "1.8.3P";
 
 Pod::Spec.new do |s|
   s.name         = "JKCategories"
@@ -114,6 +114,18 @@ Pod::Spec.new do |s|
 
         uiimage.subspec 'Rotate' do |rotate|
             rotate.source_files = 'JKCategories/UIKit/UIImage/UIImage+JKRotate.{h,m}'
+        end
+
+        uiimage.subspec 'Resize' do |resize|
+            resize.source_files = 'JKCategories/UIKit/UIImage/UIImage+JKResize.{h,m}'
+        end
+
+        uiimage.subspec 'Thumbnail' do |thumbnail|
+            thumbnail.source_files = 'JKCategories/UIKit/UIImage/UIImage+JKThunbnail.{h,m}'
+        end
+
+        uiimage.subspec 'Crop' do |crop|
+            crop.source_files = 'JKCategories/UIKit/UIImage/UIImage+JKCrop.{h,m}'
         end
 
     end

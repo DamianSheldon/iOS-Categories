@@ -10,4 +10,12 @@
 
 @implementation UIImage (JKCrop)
 
+- (UIImage *)jk_croppedImageInRect:(CGRect)rect
+{
+    CGImageRef imageRef = CGImageCreateWithImageInRect([self CGImage], rect);
+    UIImage *croppedImage = [UIImage imageWithCGImage:imageRef scale:self.scale orientation:self.imageOrientation];
+    CGImageRelease(imageRef);
+    
+    return croppedImage;
+}
 @end
