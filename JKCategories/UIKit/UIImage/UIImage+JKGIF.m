@@ -18,37 +18,25 @@
 
     CGImageSourceRef source = CGImageSourceCreateWithData((__bridge CFDataRef)data, NULL);
 
-    size_t count = CGImageSourceGetCount(source);
-
-    UIImage *animatedImage;
-
-    if (count <= 1) {
-        animatedImage = [[UIImage alloc] initWithData:data];
-    }
-    else {
-        NSMutableArray *images = [NSMutableArray array];
-
-        NSTimeInterval duration = 0.0f;
-
-        for (size_t i = 0; i < count; i++) {
-            CGImageRef image = CGImageSourceCreateImageAtIndex(source, i, NULL);
-
-            duration += [self jk_frameDurationAtIndex:i source:source];
-
-            [images addObject:[UIImage imageWithCGImage:image scale:[UIScreen mainScreen].scale orientation:UIImageOrientationUp]];
-
-            CGImageRelease(image);
-        }
-
-        if (!duration) {
-            duration = (1.0f / 10.0f) * count;
-        }
-
-        animatedImage = [UIImage animatedImageWithImages:images duration:duration];
-    }
+    UIImage *animatedImage = [self jk_animatedGIFWithImageSource:source];
 
     CFRelease(source);
 
+    return animatedImage;
+}
+
++ (UIImage *)jk_animatedImageWithURL:(NSURL *)theURL
+{
+    if (!theURL) {
+        return nil;
+    }
+    
+    CGImageSourceRef source = CGImageSourceCreateWithURL((__bridge CFURLRef)theURL, NULL);
+    
+    UIImage *animatedImage = [self jk_animatedGIFWithImageSource:source];
+
+    CFRelease(source);
+    
     return animatedImage;
 }
 
@@ -153,6 +141,37 @@
     UIGraphicsEndImageContext();
 
     return [UIImage animatedImageWithImages:scaledImages duration:self.duration];
+}
+
+#pragma mark - Private Method
+
++ (UIImage *)jk_animatedGIFWithImageSource:(CGImageSourceRef)source
+{
+    size_t count = CGImageSourceGetCount(source);
+    
+    UIImage *animatedImage;
+    
+    NSMutableArray *images = [NSMutableArray array];
+    
+    NSTimeInterval duration = 0.0f;
+    
+    for (size_t i = 0; i < count; i++) {
+        CGImageRef image = CGImageSourceCreateImageAtIndex(source, i, NULL);
+        
+        duration += [self jk_frameDurationAtIndex:i source:source];
+        
+        [images addObject:[UIImage imageWithCGImage:image scale:[UIScreen mainScreen].scale orientation:UIImageOrientationUp]];
+        
+        CGImageRelease(image);
+    }
+    
+    if (!duration) {
+        duration = (1.0f / 10.0f) * count;
+    }
+    
+    animatedImage = [UIImage animatedImageWithImages:images duration:duration];
+    
+    return animatedImage;
 }
 
 @end

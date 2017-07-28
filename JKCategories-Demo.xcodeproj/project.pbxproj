@@ -227,7 +227,6 @@
 		A28BE3291A3E9FDC005C4AC6 /* UIColor+JKHEX.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2F41A3E9FDC005C4AC6 /* UIColor+JKHEX.m */; };
 		A28BE32A1A3E9FDC005C4AC6 /* UIDevice+JKHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2F71A3E9FDC005C4AC6 /* UIDevice+JKHardware.m */; };
 		A28BE32B1A3E9FDC005C4AC6 /* UIImage+JKAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2FA1A3E9FDC005C4AC6 /* UIImage+JKAlpha.m */; };
-		A28BE32C1A3E9FDC005C4AC6 /* UIImage+JKAnimatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2FC1A3E9FDC005C4AC6 /* UIImage+JKAnimatedGIF.m */; };
 		A28BE32D1A3E9FDC005C4AC6 /* UIImage+JKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE2FE1A3E9FDC005C4AC6 /* UIImage+JKColor.m */; };
 		A28BE32F1A3E9FDC005C4AC6 /* UIImage+JKResize.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE3021A3E9FDC005C4AC6 /* UIImage+JKResize.m */; };
 		A28BE3301A3E9FDC005C4AC6 /* UIImage+JKRoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = A28BE3041A3E9FDC005C4AC6 /* UIImage+JKRoundedCorner.m */; };
@@ -774,8 +773,6 @@
 		A28BE2F71A3E9FDC005C4AC6 /* UIDevice+JKHardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+JKHardware.m"; sourceTree = "<group>"; };
 		A28BE2F91A3E9FDC005C4AC6 /* UIImage+JKAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKAlpha.h"; sourceTree = "<group>"; };
 		A28BE2FA1A3E9FDC005C4AC6 /* UIImage+JKAlpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKAlpha.m"; sourceTree = "<group>"; };
-		A28BE2FB1A3E9FDC005C4AC6 /* UIImage+JKAnimatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKAnimatedGIF.h"; sourceTree = "<group>"; };
-		A28BE2FC1A3E9FDC005C4AC6 /* UIImage+JKAnimatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKAnimatedGIF.m"; sourceTree = "<group>"; };
 		A28BE2FD1A3E9FDC005C4AC6 /* UIImage+JKColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKColor.h"; sourceTree = "<group>"; };
 		A28BE2FE1A3E9FDC005C4AC6 /* UIImage+JKColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKColor.m"; sourceTree = "<group>"; };
 		A28BE3011A3E9FDC005C4AC6 /* UIImage+JKResize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKResize.h"; sourceTree = "<group>"; };
@@ -2382,8 +2379,6 @@
 				A28BE3741A3EBA7E005C4AC6 /* UIImage+JKFileName.m */,
 				A28BE2F91A3E9FDC005C4AC6 /* UIImage+JKAlpha.h */,
 				A28BE2FA1A3E9FDC005C4AC6 /* UIImage+JKAlpha.m */,
-				A28BE2FB1A3E9FDC005C4AC6 /* UIImage+JKAnimatedGIF.h */,
-				A28BE2FC1A3E9FDC005C4AC6 /* UIImage+JKAnimatedGIF.m */,
 				A28BE2FD1A3E9FDC005C4AC6 /* UIImage+JKColor.h */,
 				A28BE2FE1A3E9FDC005C4AC6 /* UIImage+JKColor.m */,
 				A28BE3011A3E9FDC005C4AC6 /* UIImage+JKResize.h */,
@@ -3419,7 +3414,6 @@
 				A2C87DC81CF86CC200B3DDDC /* NSMutableURLRequest+JKUpload.m in Sources */,
 				A284C1381AEBCEE700D90ED5 /* NSDateFormatter+JKMake.m in Sources */,
 				A28BE3291A3E9FDC005C4AC6 /* UIColor+JKHEX.m in Sources */,
-				A28BE32C1A3E9FDC005C4AC6 /* UIImage+JKAnimatedGIF.m in Sources */,
 				A2958D121B35958000D7AA0F /* UITextField+JKShake.m in Sources */,
 				A202D97B1B0F7C3300EAB199 /* CLLocation+JKCH1903.m in Sources */,
 				A281FBC61AC81303009040DA /* UIColorDemoViewController.m in Sources */,

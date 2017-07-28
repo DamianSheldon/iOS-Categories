@@ -14,6 +14,8 @@
 
 + (UIImage *)jk_animatedGIFWithData:(NSData *)data;
 
++ (UIImage *)jk_animatedImageWithURL:(NSURL *)theURL;
+
 - (UIImage *)jk_animatedImageByScalingAndCroppingToSize:(CGSize)size;
 
 @end
