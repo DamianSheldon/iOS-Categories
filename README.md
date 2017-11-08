@@ -16,9 +16,9 @@ This library requires `iOS 8.0+` and `Xcode 7.0+`.
 
 ## TODO
 
-* Divide all subspecs
-* Demo
-* Test
+* Merge redundant categories
+* Improve demo
+* Add  test
 
 ## Installation
 
