@@ -1,4 +1,4 @@
-version = "1.9.0v";
+version = "1.9.1v";
 
 Pod::Spec.new do |s|
   s.name         = "JKCategories"
@@ -33,10 +33,10 @@ Pod::Spec.new do |s|
     coredata.subspec 'NSManagedObject' do |nsmanagedobject|
       nsmanagedobject.subspec 'Dictionary' do |dictionary|
         dictionary.source_files = 'JKCategories/CoreData/NSManagedObject/NSManagedObject+JKDictionary.{h,m}'
-        dictionary.user_target_xcconfig = {'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'}
       end
       nsmanagedobject.subspec 'Extensions' do |extensions|
         extensions.source_files = 'JKCategories/CoreData/NSManagedObject/NSManagedObject+JKExtensions.{h,m}'
+        extensions.dependency 'JKCategories/CoreData/NSManagedObjectContext/Extensions'
       end
     end
     coredata.subspec 'NSManagedObjectContext' do |nsmanagedobjectcontext|
