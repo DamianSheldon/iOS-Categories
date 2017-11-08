@@ -47,300 +47,300 @@ More details can refer demos.
 ## Subspecs of categories
 
 ###AVFoundation  
-    *Additions  
+  * Additions  
 
 ###CoreData  
-    *NSFetchRequest  
-      *Extensions  
-    *NSManagedObject  
-      *Dictionary  
-      *Extensions  
-    *NSManagedObjectContext  
-      *Extensions  
-      *Fetching  
-      *FetchRequestsConstructors  
-      *ObjectClear  
+  * NSFetchRequest  
+    * Extensions  
+  * NSManagedObject  
+    * Dictionary  
+    * Extensions  
+  * NSManagedObjectContext  
+    * Extensions  
+    * Fetching  
+    * FetchRequestsConstructors  
+    * ObjectClear  
 
 ###CoreLocation  
-    *CLLocation  
-      *CH1903  
+  * CLLocation  
+    * CH1903  
 
 ###Foundation  
-    *NSArray  
-      *Block  
-      *SafeAccess  
-    *NSBundle  
-      *AppIcon  
-    *NSData  
-      *APNSToken  
-      *Base64  
-      *DataCache  
-      *Encrypt  
-      *Gzip  
-      *Hash  
-      *PCM  
-      *zlib  
-    *NSDate  
-      *CupertinoYankee  
-      *Extension  
-      *Formatter  
-      *InternetDateTime  
-      *Reporting  
-      *Utilities  
-      *ZeroDate  
-    *NSDateFormatter  
-      *Make  
-    *NSDictionary  
-      *Block  
-      *JSONString  
-      *Merge  
-      *SafeAccess  
-      *URL  
-      *XML  
-    *NSException  
-      *Trace  
-    *NSFileHandle  
-      *ReadLine  
-    *NSFileManager  
-      *Paths  
-    *NSHTTPCookieStorage  
-      *FreezeDry  
-    *NSIndexPath  
-      *Offset  
-    *NSInvocation  
-      *Bb  
-      *Block  
-    *NSNotificationCenter  
-      *MainThread  
-    *NSNumber  
-      *CalculatingByString  
-      *Extensions  
-      *CGFloat  
-      *RomanNumerals  
-      *Round  
-    *NSObject  
-      *AddProperty  
-      *AppInfo  
-      *AssociatedObject  
-      *AutoCoding  
-      *Blocks  
-      *BlockTimer  
-      *EasyCopy  
-      *GCD  
-      *KVOBlocks  
-      *Reflection  
-      *Runtime  
-    *NSRunLoop  
-      *PerformBlock  
-    *NSSet  
-      *Block  
-    *NSString  
-      *Base64  
-      *Contains  
-      *DictionaryValue  
-      *Emoji  
-      *Encrypt  
-      *Hash  
-      *HTML  
-      *Matcher  
-      *MIME  
-      *NormalRegex  
-      *Pinyin  
-      *RemoveEmoji  
-      *Score  
-      *Size  
-      *StringPages  
-      *Trims  
-      *URLEncode  
-      *UUID  
-      *XMLDictionary  
-    *NSTimer  
-      *Addition  
-      *Blocks  
-    *NSURL  
-      *Param  
-      *QueryDictionary  
-    *NSURLConnection  
-      *SelfSigned  
-    *NSURLRequest  
-      *Upload  
-      *ParamsFromDictionary  
-    *NSURLSession  
-      *SynchronousTask  
-    *NSUserDefaults  
-      *iCloudSync  
-      *SafeAccess  
+  * NSArray  
+    * Block  
+    * SafeAccess  
+  * NSBundle  
+    * AppIcon  
+  * NSData  
+    * APNSToken  
+    * Base64  
+    * DataCache  
+    * Encrypt  
+    * Gzip  
+    * Hash  
+    * PCM  
+    * zlib  
+  * NSDate  
+    * CupertinoYankee  
+    * Extension  
+    * Formatter  
+    * InternetDateTime  
+    * Reporting  
+    * Utilities  
+    * ZeroDate  
+  * NSDateFormatter  
+    * Make  
+  * NSDictionary  
+    * Block  
+    * JSONString  
+    * Merge  
+    * SafeAccess  
+    * URL  
+    * XML  
+  * NSException  
+    * Trace  
+  * NSFileHandle  
+    * ReadLine  
+  * NSFileManager  
+    * Paths  
+  * NSHTTPCookieStorage  
+    * FreezeDry  
+  * NSIndexPath  
+    * Offset  
+  * NSInvocation  
+    * Bb  
+    * Block  
+  * NSNotificationCenter  
+    * MainThread  
+  * NSNumber  
+    * CalculatingByString  
+    * Extensions  
+    * CGFloat  
+    * RomanNumerals  
+    * Round  
+  * NSObject  
+    * AddProperty  
+    * AppInfo  
+    * AssociatedObject  
+    * AutoCoding  
+    * Blocks  
+    * BlockTimer  
+    * EasyCopy  
+    * GCD  
+    * KVOBlocks  
+    * Reflection  
+    * Runtime  
+  * NSRunLoop  
+    * PerformBlock  
+  * NSSet  
+    * Block  
+  * NSString  
+    * Base64  
+    * Contains  
+    * DictionaryValue  
+    * Emoji  
+    * Encrypt  
+    * Hash  
+    * HTML  
+    * Matcher  
+    * MIME  
+    * NormalRegex  
+    * Pinyin  
+    * RemoveEmoji  
+    * Score  
+    * Size  
+    * StringPages  
+    * Trims  
+    * URLEncode  
+    * UUID  
+    * XMLDictionary  
+  * NSTimer  
+    * Addition  
+    * Blocks  
+  * NSURL  
+    * Param  
+    * QueryDictionary  
+  * NSURLConnection  
+    * SelfSigned  
+  * NSURLRequest  
+    * Upload  
+    * ParamsFromDictionary  
+  * NSURLSession  
+    * SynchronousTask  
+  * NSUserDefaults  
+    * iCloudSync  
+    * SafeAccess  
 
 ###MapKit  
-    *MKMapView  
-      *BetterMaps  
-      *MoveLogo  
-      *ZoomLevel  
+  * MKMapView  
+    * BetterMaps  
+    * MoveLogo  
+    * ZoomLevel  
 
 ###QuartzCore  
-    *CAAnimation  
-      *EasingEquations  
-    *CALayer  
-      *BorderColor  
-    *CAMediaTimingFunction  
-      *AdditionalEquations  
-    *CAShapeLayer  
-      *UIBezierPath  
-    *CATransaction  
-      *AnimateWithDuration  
+  * CAAnimation  
+    * EasingEquations  
+  * CALayer  
+    * BorderColor  
+  * CAMediaTimingFunction  
+    * AdditionalEquations  
+  * CAShapeLayer  
+    * UIBezierPath  
+  * CATransaction  
+    * AnimateWithDuration  
 
 ###UIKit  
-    *UIAlertView  
-      *Block  
-    *UIApplication  
-      *ApplicationSize  
-      *KeyboardFrame  
-      *NetworkActivityIndicator  
-      *Permissions  
-    *UIBarButtonItem  
-      *Action  
-      *Badge  
-    *UIBezierPath  
-      *BasicShapes  
-      *Length  
-      *SVGString  
-      *Symbol  
-      *ThroughPointsBezier  
-    *UIButton  
-      *BackgroundColor  
-      *Badge  
-      *Block  
-      *CountDown  
-      *ImagePosition  
-      *Indicator  
-      *MiddleAligning  
-      *Submitting  
-      *TouchAreaInsets  
-    *UIColor  
-      *Gradient  
-      *HEX  
-      *Modify  
-      *Random  
-      *Web  
-    *UIControl  
-      *ActionBlocks  
-      *Block  
-      *Sound  
-    *UIDevice  
-      *Hardware  
-      *PasscodeStatus  
-    *UIFont  
-      *CustomLoader  
-      *DynamicFontControl  
-      *TTF  
-    *UIImage  
-      *Alpha  
-      *BetterFace  
-      *Blur  
-      *Capture  
-      *Color  
-      *Crop  
-      *FileName  
-      *GIF  
-      *Mask  
-      *Merge  
-      *Reflect  
-      *RemoteSize  
-      *Resize  
-      *Rotate  
-      *RoundedCorner  
-      *SampleBuffer  
-      *Shadow  
-      *SuperCompress  
-      *Thumbnail  
-      *Vector  
-    *UIImageView  
-      *Addition  
-      *BetterFace  
-      *FaceAwareFill  
-      *GeometryConversion  
-      *Letters  
-      *Reflect  
-    *UILable  
-      *AdjustableLabel  
-      *AutomaticWriting  
-      *AutoSize  
-      *SuggestSize  
-    *UINavigationBar  
-      *Awesome  
-    *UINavigationController  
-      *KeyboardFix  
-      *StackManager  
-      *Transitions  
-    *UINavigationItem  
-      *Loading  
-      *Lock  
-      *Margin  
-    *UIPopoverController  
-      *hone  
-    *UIResponder  
-      *Chain  
-      *FirstResponder  
-    *UIScreen  
-      *Frame  
-    *UIScrollView  
-      *Addition  
-      *Pages  
-    *UISearchBar  
-      *Blocks  
-    *UISplitViewController  
-      *QuickAccess  
-    *UITableView  
-      *iOS7Style  
-    *UITableViewCell  
-      *DelaysContentTouches  
-      *NIB  
-    *UITextField  
-      *Blocks  
-      *History  
-      *InputLimit  
-      *Select  
-      *Shake  
-    *UITextView  
-      *InputLimit  
-      *PinchZoom  
-      *PlaceHolder  
-      *Select  
-    *UIView  
-      *Animation  
-      *BlockGesture  
-      *Border  
-      *Constraints  
-      *CustomBorder  
-      *Draggable  
-      *Find  
-      *Frame  
-      *Nib  
-      *Recursion  
-      *RedDot  
-      *Screenshot  
-      *Shake  
-      *Toast  
-      *Visuals  
-    *UIViewController  
-      *BackButtonItemTitle  
-      *BackButtonTouched  
-      *BlockSegue  
-      *RecursiveDescription  
-      *StoreKit  
-      *Visible  
-    *UIWebView  
-      *Blocks  
-      *Canvas  
-      *JavaScript  
-      *Load  
-      *LoadInfo  
-      *MetaParser  
-      *Style  
-      *SwipeGesture  
-      *WebStorage  
-    *UIWindow  
-      *Hierarchy  
+  * UIAlertView  
+    * Block  
+  * UIApplication  
+    * ApplicationSize  
+    * KeyboardFrame  
+    * NetworkActivityIndicator  
+    * Permissions  
+  * UIBarButtonItem  
+    * Action  
+    * Badge  
+  * UIBezierPath  
+    * BasicShapes  
+    * Length  
+    * SVGString  
+    * Symbol  
+    * ThroughPointsBezier  
+  * UIButton  
+    * BackgroundColor  
+    * Badge  
+    * Block  
+    * CountDown  
+    * ImagePosition  
+    * Indicator  
+    * MiddleAligning  
+    * Submitting  
+    * TouchAreaInsets  
+  * UIColor  
+    * Gradient  
+    * HEX  
+    * Modify  
+    * Random  
+    * Web  
+  * UIControl  
+    * ActionBlocks  
+    * Block  
+    * Sound  
+  * UIDevice  
+    * Hardware  
+    * PasscodeStatus  
+  * UIFont  
+    * CustomLoader  
+    * DynamicFontControl  
+    * TTF  
+  * UIImage  
+    * Alpha  
+    * BetterFace  
+    * Blur  
+    * Capture  
+    * Color  
+    * Crop  
+    * FileName  
+    * GIF  
+    * Mask  
+    * Merge  
+    * Reflect  
+    * RemoteSize  
+    * Resize  
+    * Rotate  
+    * RoundedCorner  
+    * SampleBuffer  
+    * Shadow  
+    * SuperCompress  
+    * Thumbnail  
+    * Vector  
+  * UIImageView  
+    * Addition  
+    * BetterFace  
+    * FaceAwareFill  
+    * GeometryConversion  
+    * Letters  
+    * Reflect  
+  * UILable  
+    * AdjustableLabel  
+    * AutomaticWriting  
+    * AutoSize  
+    * SuggestSize  
+  * UINavigationBar  
+    * Awesome  
+  * UINavigationController  
+    * KeyboardFix  
+    * StackManager  
+    * Transitions  
+  * UINavigationItem  
+    * Loading  
+    * Lock  
+    * Margin  
+  * UIPopoverController  
+    * hone  
+  * UIResponder  
+    * Chain  
+    * FirstResponder  
+  * UIScreen  
+    * Frame  
+  * UIScrollView  
+    * Addition  
+    * Pages  
+  * UISearchBar  
+    * Blocks  
+  * UISplitViewController  
+    * QuickAccess  
+  * UITableView  
+    * iOS7Style  
+  * UITableViewCell  
+    * DelaysContentTouches  
+    * NIB  
+  * UITextField  
+    * Blocks  
+    * History  
+    * InputLimit  
+    * Select  
+    * Shake  
+  * UITextView  
+    * InputLimit  
+    * PinchZoom  
+    * PlaceHolder  
+    * Select  
+  * UIView  
+    * Animation  
+    * BlockGesture  
+    * Border  
+    * Constraints  
+    * CustomBorder  
+    * Draggable  
+    * Find  
+    * Frame  
+    * Nib  
+    * Recursion  
+    * RedDot  
+    * Screenshot  
+    * Shake  
+    * Toast  
+    * Visuals  
+  * UIViewController  
+    * BackButtonItemTitle  
+    * BackButtonTouched  
+    * BlockSegue  
+    * RecursiveDescription  
+    * StoreKit  
+    * Visible  
+  * UIWebView  
+    * Blocks  
+    * Canvas  
+    * JavaScript  
+    * Load  
+    * LoadInfo  
+    * MetaParser  
+    * Style  
+    * SwipeGesture  
+    * WebStorage  
+  * UIWindow  
+    * Hierarchy    
 
 ## License
 
