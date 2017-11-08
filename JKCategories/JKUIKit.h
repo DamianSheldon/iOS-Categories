@@ -44,7 +44,6 @@
 #import "UIFont+JKDynamicFontControl.h"
 #import "UIFont+JKTTF.h"
 #import "UIImage+JKAlpha.h"
-#import "UIImage+JKAnimatedGIF.h"
 #import "UIImage+JKBetterFace.h"
 #import "UIImage+JKBlur.h"
 #import "UIImage+JKCapture.h"

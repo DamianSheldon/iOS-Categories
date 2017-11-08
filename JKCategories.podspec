@@ -1,4 +1,4 @@
-version = 1.8.3P;
+version = "1.8.3P";
 
 Pod::Spec.new do |s|
   s.name         = "JKCategories"
@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/shaojiankui/JKCategories"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "skyfox" => "i@skyfox.org" }
-  s.platform     = :ios, "6.0"
-  s.ios.deployment_target = "6.0"
+  s.platform     = :ios, "8.0"
+  s.ios.deployment_target = "8.0"
   s.requires_arc = true
   s.frameworks = 'Foundation', 'UIKit', 'CoreData', 'QuartzCore', 'CoreLocation', 'MapKit'
   s.libraries    = "z"
@@ -33,6 +33,7 @@ Pod::Spec.new do |s|
     coredata.subspec 'NSManagedObject' do |nsmanagedobject|
       nsmanagedobject.subspec 'Dictionary' do |dictionary|
         dictionary.source_files = 'JKCategories/CoreData/NSManagedObject/NSManagedObject+JKDictionary.{h,m}'
+        dictionary.user_target_xcconfig = {'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'}
       end
       nsmanagedobject.subspec 'Extensions' do |extensions|
         extensions.source_files = 'JKCategories/CoreData/NSManagedObject/NSManagedObject+JKExtensions.{h,m}'
@@ -41,6 +42,7 @@ Pod::Spec.new do |s|
     coredata.subspec 'NSManagedObjectContext' do |nsmanagedobjectcontext|
       nsmanagedobjectcontext.subspec 'Extensions' do |extensions|
         extensions.source_files = 'JKCategories/CoreData/NSManagedObjectContext/NSManagedObjectContext+JKExtensions.{h,m}'
+        extensions.dependency 'JKCategories/CoreData/NSFetchRequest/Extensions'
       end
       nsmanagedobjectcontext.subspec 'Fetching' do |fetching|
         fetching.source_files = 'JKCategories/CoreData/NSManagedObjectContext/NSManagedObjectContext+JKFetching.{h,m}'
@@ -88,6 +90,8 @@ Pod::Spec.new do |s|
       end
       nsdata.subspec 'Encrypt' do |encrypt|
         encrypt.source_files = 'JKCategories/Foundation/NSData/NSData+JKEncrypt.{h,m}'
+        # Fix KEncrypt.h:11:9: error: include of non-modular header inside framework module 'JKCategories.NSData_JKEncrypt': '/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.3.sdk/usr/include/CommonCrypto/CommonCryptor.h' [-Werror,-Wnon-modular-include-in-framework-module]
+        encrypt.user_target_xcconfig = {'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'}
       end
       nsdata.subspec 'Gzip' do |gzip|
         gzip.source_files = 'JKCategories/Foundation/NSData/NSData+JKGzip.{h,m}'
@@ -253,6 +257,7 @@ Pod::Spec.new do |s|
     foundation.subspec 'NSString' do |nsstring|
       nsstring.subspec 'Base64' do |base64|
         base64.source_files = 'JKCategories/Foundation/NSString/NSString+JKBase64.{h,m}'
+        base64.dependency 'JKCategories/Foundation/NSData/Base64'
       end
       nsstring.subspec 'Contains' do |contains|
         contains.source_files = 'JKCategories/Foundation/NSString/NSString+JKContains.{h,m}'
@@ -265,6 +270,8 @@ Pod::Spec.new do |s|
       end
       nsstring.subspec 'Encrypt' do |encrypt|
         encrypt.source_files = 'JKCategories/Foundation/NSString/NSString+JKEncrypt.{h,m}'
+        encrypt.dependency 'JKCategories/Foundation/NSData/Encrypt'
+        encrypt.dependency 'JKCategories/Foundation/NSData/Base64'
       end
       nsstring.subspec 'Hash' do |hash|
         hash.source_files = 'JKCategories/Foundation/NSString/NSString+JKHash.{h,m}'
@@ -792,9 +799,11 @@ Pod::Spec.new do |s|
       end
       uiwebview.subspec 'Canvas' do |canvas|
         canvas.source_files = 'JKCategories/UIKit/UIWebView/UIWebView+JKCanvas.{h,m}'
+        canvas.dependency 'JKCategories/UIKit/UIColor/Web'
       end
       uiwebview.subspec 'JavaScript' do |javascript|
         javascript.source_files = 'JKCategories/UIKit/UIWebView/UIWebView+JKJavaScript.{h,m}'
+        javascript.dependency 'JKCategories/UIKit/UIColor/Web'
       end
       uiwebview.subspec 'Load' do |load|
         load.source_files = 'JKCategories/UIKit/UIWebView/UIWebView+JKLoad.{h,m}'
@@ -821,3 +830,4 @@ Pod::Spec.new do |s|
       end
     end
   end
+end
